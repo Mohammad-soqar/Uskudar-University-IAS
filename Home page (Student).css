@@ -1,3 +1,7 @@
+@font-face {
+    src: url(font/Inter-VariableFont_slnt,wght.ttf);
+    font-family: inter;
+}
 html,
 body,
 div,
@@ -133,17 +137,17 @@ table {
 
 /* reset code ^*/
 
-@font-face {
-    src: url(font/Inter-VariableFont_slnt,wght.ttf);
+
+body{
+    margin: 0;
+    padding: 0;
     font-family: inter;
 }
-body{
+.all{
     display: flex;
     flex-direction: row;
-    font-family: inter;
-    color: #585858;
-    height: 100%;
-    background-color: #FFF8D4;
+    background-color: #585858;
+    height: 100vh;
 }
 /*----------side menu bar---------- */
 
@@ -161,7 +165,9 @@ body{
     justify-content: space-between;
 }
 .side-bar{
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 .home a
 ,.internship a
@@ -235,7 +241,7 @@ list-style-type: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 35%;
+    height: 25%;
 }
 .logout{
     margin: 1rem 0 0 0;
@@ -255,7 +261,7 @@ list-style-type: none;
 /*------- Student page side------*/
 
 .studentpage{
-    background-color: #FFF8D4;
+    background-color: #F7F7F7;
     width: 100%;
 }
 .internshipSide{
