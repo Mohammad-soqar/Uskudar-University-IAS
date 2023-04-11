@@ -106,9 +106,7 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
+
 
 ol,
 ul {
@@ -138,15 +136,11 @@ table {
 /* reset code ^*/
 
 
-body{
-
-    font-family: inter;
-}
-.all{
+/* .all{
     display: flex;
     flex-direction: row;
     height: 100vh;
-}
+} */
 /*----------side menu bar---------- */
 
 .logo{
@@ -226,11 +220,11 @@ body{
 list-style-type: none;
 }
       
-.Messagesslide li {padding : 3px;}
+/* .Messagesslide li {padding : 3px;}
       
 #Messagestouch {position: absolute; opacity: 0; height: 0px;}    
       
-#Messagestouch:checked + .Messagesslide {height: 65px;} 
+#Messagestouch:checked + .Messagesslide {height: 65px;}  */
 
 /*----------Messages Dropdown menu----------*/
 .logout-support-hr{
