@@ -1,0 +1,53 @@
+
+
+
+ 
+.supportSide{
+    width: 100%;
+}
+.question{
+    margin: 5rem 0 0 0 ;
+    width: 90%;
+    height: 30%;
+    margin: 5%;
+    background-image: url(img/have-a-Quastion-Backgroind.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.writeQuestion{
+    margin: 1rem;
+display: flex;
+
+}
+
+
+.search-bar{
+
+    height: 3rem;
+    background-color: #e1cdcd;
+    align-items: center;
+    padding: 10px 20px;
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: aqua;
+}
+.search-bar img{
+    width: 25px;
+}
+.search-bar button{
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: #e1cdcd;
+    cursor: pointer;
+}

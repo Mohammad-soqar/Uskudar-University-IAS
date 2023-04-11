@@ -141,18 +141,16 @@ p {
 /* reset code ^*/
 
 
+
 body {
     margin: 0;
     padding: 0;
-    font-family: inter;
-    background-color: #F7F7F7 !important;
 
-}
+
 
 .all {
     display: flex;
     flex-direction: row;
-
     height: 100vh;
 }
 
@@ -258,6 +256,13 @@ body {
 #Messagestouch:checked+.Messagesslide {
     height: 100px;
 }
+
+.Messagesslide li {padding : 3px;}
+      
+#Messagestouch {position: absolute; opacity: 0; height: 0px;}    
+      
+#Messagestouch:checked + .Messagesslide {height: 65px;} 
+
 
 /*----------Messages Dropdown menu----------*/
 .logout-support-hr {
