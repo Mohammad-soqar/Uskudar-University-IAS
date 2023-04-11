@@ -1,147 +1,11 @@
-@font-face {
-    src: url(font/Inter-VariableFont_slnt,wght.ttf);
-    font-family: inter;
-}
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-p {
-    color: #585858 !important;
-}
 
 /* reset code ^*/
 
 
+<<<<<<< Updated upstream
 
+<<<<<<< Updated upstream
 body {
     margin: 0;
     padding: 0;
@@ -151,16 +15,32 @@ body {
 }
 
 
+<<<<<<< Updated upstream
 .wrapper {
+=======
+=======
+
+>>>>>>> Stashed changes
+
+/* .all {
+>>>>>>> Stashed changes
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 100vh;
 }
+<<<<<<< Updated upstream
+=======
 
+>>>>>>> Stashed changes
+
+=======
+ */
+>>>>>>> Stashed changes
 
 /*----------side menu bar---------- */
 
+<<<<<<< Updated upstream
 .logo {
     text-align: center;
     margin: 1rem 0 3rem 0;
@@ -254,7 +134,7 @@ body {
     list-style-type: none;
 }
 
-.Messagesslide li {
+/* .Messagesslide li {
     padding: 3px;
 }
 
@@ -266,7 +146,7 @@ body {
 
 #Messagestouch:checked+.Messagesslide {
     height: 100px;
-}
+} */
 
 .Messagesslide li {padding : 3px;}
       
@@ -309,7 +189,14 @@ body {
 }
 
 .studentpage {
+<<<<<<< Updated upstream
    
+=======
+    background-color: #F7F7F7;
+=======
+.studentpage {
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     width: 100%;
 }
 
@@ -456,96 +343,3 @@ body {
 }
 
 
-
-/* navbar */
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 0rem;
-
-}
-
-.status {
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 30px 2px #00000015;
-    border-radius: 27px;
-    padding: 0.5rem 2rem;
-}
-
-.progress-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-.progress-circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #ccc;
-
-}
-
-.progress-line {
-    width: 7rem;
-    height: 0.3rem !important;
-    background-color: #ccc;
-
-}
-
-.progress-line {
-
-    height: 2px;
-    background-color: #ccc;
-}
-
-.progress-animation {
-    background-color: #FFD504;
-    transition: background-color 0.5s ease;
-}
-
-.progress-animation2 {
-    background-color: #FFD504;
-    transition: background-color 0.9s ease;
-}
-
-.status-info {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-    margin: 0rem 0rem 0rem 2rem;
-
-}
-
-.Account {
-    display: flex;
-    align-items: center;
-}
-
-.Account-Text {
-    font-family: inter;
-    color: #585858;
-    font-weight: 600;
-    margin-left: 0.5rem;
-}
-
-.Account-Text p {
-    margin: 0.5rem 0rem;
-}
-
-.call-to-action-btns {
-    display: flex;
-    align-items: center;
-}
-
-.call-to-action-btns a {
-    margin: 0rem 1rem;
-}
-
-/* navbar */
