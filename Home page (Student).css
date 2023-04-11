@@ -151,9 +151,10 @@ body {
 }
 
 
-.all {
+.wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: 100vh;
 }
 
@@ -207,9 +208,7 @@ body {
 
 }
 
-.hello{
-    font-size: 16pt;
-}
+
 /*----------Messages Dropdown Menu----------*/
 
 .Messages {
