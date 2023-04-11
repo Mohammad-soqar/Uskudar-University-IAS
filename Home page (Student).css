@@ -145,7 +145,10 @@ p {
 body {
     margin: 0;
     padding: 0;
+    font-family: inter;
+    background-color: #F7F7F7 !important;
 
+}
 
 
 .all {
@@ -168,7 +171,7 @@ body {
     height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .side-bar {
@@ -195,7 +198,14 @@ body {
     color: #585858;
     margin: 0 0 0 1rem;
 }
+.home,
+.Messages,
+.internship,
+.forms,
+.guide{
+    margin: 0rem 0rem 2rem 0rem ;
 
+}
 
 
 /*----------Messages Dropdown Menu----------*/
@@ -298,7 +308,7 @@ body {
 }
 
 .studentpage {
-    background-color: #F7F7F7;
+   
     width: 100%;
 }
 
