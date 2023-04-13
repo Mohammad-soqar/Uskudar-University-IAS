@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(255, 251, 206);
+}
+
+.tilte{
+    font-size: 31.85px;
+}
+.text,
+.deadline{
+font-size: 19.85px;
+}
+
+img{
+    margin-left: 20px;
+    
+}
+   
+.link{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 25px;
+    margin-left: 170px;
+    font-size: 26.85px;
+    color: #FFFFFF;
+    background: #FFD504;
+    border-radius: 25px;
+
+}
+a{
+    text-decoration: none;
+}
+
+.file1{ 
+padding: 20px;
+position: absolute;
+width: 372px;
+height: 526px;
+left: 494px;
+top: 269px;
+background: #FFFFFF;
+box-shadow: -1px 3px 8px rgba(96, 80, 0, 0.25);
+border-radius: 29px;
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 26.85px;
+line-height: 45px;
+}
+
+.file2{
+padding: 20px;
+position: absolute;
+width: 372px;
+height: 526px;
+left: 946px;
+top: 269px;
+background: #FFFFFF;
+box-shadow: -1px 3px 8px rgba(96, 80, 0, 0.25);
+border-radius: 29px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 26.85px;
+line-height: 45px;
+}
+
+.file3{
+padding: 20px;
+position: absolute;
+width: 372px;
+height: 526px;
+left: 1398px;
+top: 269px;
+background: #FFFFFF;
+box-shadow: -1px 3px 8px rgba(96, 80, 0, 0.25);
+border-radius: 29px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 26.85px;
+line-height: 45px;
+}
