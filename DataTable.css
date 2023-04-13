@@ -1,4 +1,5 @@
 .DataTable {
+  width: 100%;
   background-color: #fff;
 }
 
@@ -25,6 +26,16 @@ td {
 
 th {
   cursor: pointer;
+  width: 100px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+td{
+  max-width: 100px  !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sort {
@@ -44,15 +55,17 @@ th {
   transform: rotate(-180deg);
 }
 
-.pending div{
+.pending div {
   color: #AE9100;
   background-color: #FFF8D4 !important;
 }
-.completed div{
+
+.completed div {
   color: #007505;
   background-color: #EBF8EC !important;
 }
-.state div{
+
+.state div {
   padding: 0.3rem 0.6rem;
   border-radius: 19px;
   font-weight: 500;

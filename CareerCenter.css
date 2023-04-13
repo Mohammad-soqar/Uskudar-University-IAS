@@ -6,13 +6,15 @@
 
 .CareerCenter-Content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 5rem 0rem 0rem 0rem;
 }
 
 .both-sides {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .widgets-shared {
@@ -26,16 +28,24 @@
   justify-content: flex-end !important;
 }
 
-.Icon-text {
+.widgetHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: 0.5s;
+  justify-content: space-between;
+}
+
+.Icon-text{
   display: flex;
   align-items: center;
 }
 
-.widget-left-side p {
+.widget-left-side p,.widget-right-side p {
   color: #585858;
   font-size: 20px;
   font-family: inter;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .widget-left-side img {
@@ -55,6 +65,8 @@
 .widget-left-side {
   flex-direction: column;
   display: flex;
+  margin: 0rem 2rem 0rem 0rem;
+
   justify-content: center;
   align-items: flex-start;
   padding: 30px;
@@ -70,4 +82,36 @@
 
 .DataTable{
   margin: 1.5rem 0rem 0rem 0rem;
+}
+
+.widget-right-side{
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widget-right-side img {
+  margin: 0px 10px 0px 0px
+}
+
+.right-section-widgets{
+  width: 70%;
+  justify-content: space-between;
+}
+
+.check-all-btn button{
+  background-color: transparent;
+  border: none;
+  font-family: inter;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.widget-right-side p{
+  width: 60%;
+}
+
+.collapse{
+  display: none;
 }

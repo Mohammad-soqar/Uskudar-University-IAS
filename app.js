@@ -77,6 +77,10 @@ $('.question4').click (function(){
 
 
 
+$('#check-all').on('click', function() {
+  $('.right-section-widgets').addClass('collapse');
+});
+
 
 
 
