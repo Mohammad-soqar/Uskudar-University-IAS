@@ -1,0 +1,74 @@
+.nav-bar {
+  justify-content: flex-end !important;
+}
+
+.contents {
+  width: 100%;
+}
+
+.CareerCenter-Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.both-sides {
+  display: flex;
+  flex-direction: column;
+}
+
+.widgets-shared {
+  background-color: #fff;
+  box-shadow: 2px 2px 30px 2px #00000015;
+  border-radius: 27px;
+  display: flex;
+
+
+
+}
+
+.Icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.widget-left-side p {
+  color: #585858;
+  font-size: 20px;
+  font-family: inter;
+  font-weight: 700;
+}
+
+.widget-left-side img {
+  margin: 0px 10px 0px 0px
+}
+
+.widget-left-side .hover-image {
+  transition: transform 0.3s ease;
+}
+
+.widget-left-side:hover .hover-image {
+  transform: scale(1.1) translate(-3.5%, -3.7%);
+}
+
+
+
+.widget-left-side {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  position: relative;
+}
+
+.widget-left-side img.hover-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+}
+
+.DataTable{
+  margin: 1.5rem 0rem 0rem 0rem;
+}

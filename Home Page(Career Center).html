@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Career Center</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CareerCenter.css">
+    <link rel="stylesheet" href="DataTable.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <section class="side-bar">
+            <div class="logo">
+                <a href="">
+                    <img src="img\logo.png" alt="" height="120rem">
+                </a>
+            </div>
+            <div class="icons">
+                <div class="home">
+                    <a href="">
+                        <img src="img\home-symbol.png" alt="" height="27px">
+                        <p>Home</p>
+                    </a>
+                </div>
+                <!-- ----------Messages Dropdown Menu---------- -->
+
+                <div class="Messages">
+                    <label for="Messagestouch"><span class="MessagesHead"><img src="img\messages-symbol.png" alt=""
+                                width="27px " height="22px">
+                            <p>Messages</p>
+                        </span></label>
+                    <input type="checkbox" id="Messagestouch">
+
+                    <ul class="Messagesslide">
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Compose Message</a></li>
+                        <li><a href="#">Sent Messages</a></li>
+                    </ul>
+                </div>
+
+                <!-- ----------Messages Dropdown Menu---------- -->
+                <div class="internship">
+                    <a href="">
+                        <img src="img\internship-symbol.png" alt="" height="22px">
+                        <p>Internship</p>
+                    </a>
+                </div>
+
+                <div class="forms">
+                    <a href="">
+                        <img src="img\forms-symbol.png" alt="" height="27px">
+                        <p>Forms</p>
+                    </a>
+                </div>
+                <div class="guide"><a href="">
+                        <img src="img\guide-symbol.png" alt="" height="23px">
+                        <p>Guide</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="logout-support-hr">
+                <div class="logout-support">
+                    <hr>
+                    <div class="logout">
+                        <a href="">
+                            <img src="img\logout-symbol.png" alt="" height="27px">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="support">
+                    <a href="">
+                        <img src="img\support-symbol.png" alt="">
+                        <p>Support</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- ----------side menu bar---------- -->
+
+        <div class="contents">
+
+            <section class="nav-bar">
+
+
+
+                <div class="call-to-action-btns">
+                    <a href=""><img src="img/messages.png" alt="" height="32px"></a>
+                    <a href=""><img src="img/Notification.png" alt="" height="35px"></a>
+                    <a class="Account">
+                        <img src="img/Account.png" alt="" height="60px">
+                        <div class="Account-Text">
+                            <p>John Doe</p>
+                            <p>200209476</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+
+            <section class="CareerCenter-Content">
+
+                <div class="left-section both-sides">
+                    
+                   <!--  <div class="widget-left-side widgets-shared">
+                        <div class="Icon-text">
+                            <img src="img/CareerCenter/Files.png" alt="">
+                            <p>Application Form Approval</p>
+                        </div>
+                        <img src="img/CareerCenter/Files-grey-1.png" alt="" class="hover-image">
+                    </div> -->
+
+                    <div class="widget-left-side widgets-shared">
+                        <div class="Icon-text">
+                            <img src="img/CareerCenter/HealthInsurance.png" height="45px" alt="">
+                            <p>Health Insurance</p>
+                        </div>
+                        <div class="DataTable">
+
+                           <!--  <input type="text" id="searchInput" placeholder="Search..."> -->
+
+                            <table id="studentTable">
+                                <thead>
+                                    <tr>
+                                        <th onclick="sortTable(0)">Student Name
+            
+                                            <img id="nameSort" class="sort rotateImage" src="img/CareerCenter/arrowUp.png" alt="">
+                                        </th>
+            
+                                        <th onclick="sortTable(1)">Student ID
+            
+                                            <img class="sort rotateImage" id="idSort" src="img/CareerCenter/arrowUp.png" alt="">
+            
+                                        </th>
+            
+                                        <th onclick="sortTable(2)">State
+                                            <img id="stateSort" class="sort rotateImage" src="img/CareerCenter/arrowUp.png" alt="">
+                                        </th>
+                                        <th class="center">Upload</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dwayne Johnson</td>
+                                        <td>200111111</td>
+                                        <td class=" center state pending"><div>Pending</div></td>
+                                        <td class="center"><img src="img/CareerCenter/Upload.png" alt="Upload" class="upload-icon"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ryan Reynolds</td>
+                                        <td>200111112</td>
+                                        <td class=" center state pending"><div>Pending</div></td>
+                                        <td class="center"><img src="img/CareerCenter/Upload.png" alt="Upload" class="upload-icon"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Adele Adkins</td>
+                                        <td>200111113</td>
+                                        <td class="center state pending"><div>Pending</div></td>
+                                        <td class="center"><img src="img/CareerCenter/Upload.png" alt="Upload" class="upload-icon"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ryan Reynolds</td>
+                                        <td>200111114</td>
+                                        <td class=" center state completed"><div>Completed</div></td>
+                                        <td class="center"><img src="img/CareerCenter/Upload.png" alt="Upload" class="upload-icon"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                   
+
+                </div>
+
+                <div class="right-section both-sides">
+                    <div class="widget-right-side widgets-shared">
+                        <img src="img/CareerCenter/AddUser.png" alt="">
+                        <p>Add User</p>
+                    </div>
+                    <div class="widget-right-side widgets-shared">
+                        <img src="img/CareerCenter/HealthInsurance.png" alt="">
+                        <p>Health Insurance</p>
+                    </div>
+                    <div class="widget-right-side widgets-shared">
+                        <img src="img/CareerCenter/Notification.png" alt="">
+                        <p>Add New Announcement</p>
+                    </div>
+                    <div class="widget-right-side widgets-shared">
+                        <img src="img/CareerCenter/SuitCase.png" alt="">
+                        <p>Add Internship opportunity</p>
+                    </div>
+                </div>
+            </section>
+            
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+    <script src="DataTable.js"></script>
+    <script src="Hover.js"></script>
+</body>
+
+</html>
