@@ -1,11 +1,3 @@
-
-
-.contents{
-    width: 100%;
-}
-/* .supportSide{
-    height: 13rem;
-} */
 .questionBackground{
     background-image: url(img/have-a-Quastion-Backgroind.png);
     background-repeat: no-repeat;
@@ -27,8 +19,7 @@
 }
 .question span{
     font-weight: 700;
-/*     text-shadow: 1px 0px 7px;
- */}
+}
 
 .writeQuestion{
     display: flex;
@@ -114,4 +105,3 @@
     display: none;
     line-height: 1.5;
 }
-
