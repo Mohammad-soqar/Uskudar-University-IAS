@@ -2,9 +2,7 @@
   justify-content: flex-end !important;
 }
 
-.contents {
-  width: 100%;
-}
+
 
 .CareerCenter-Content {
   display: flex;
@@ -22,9 +20,10 @@
   box-shadow: 2px 2px 30px 2px #00000015;
   border-radius: 27px;
   display: flex;
+}
 
-
-
+.nav-bar {
+  justify-content: flex-end !important;
 }
 
 .Icon-text {
