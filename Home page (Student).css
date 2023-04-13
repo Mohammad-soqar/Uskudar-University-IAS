@@ -31,24 +31,31 @@
 }
 
 .checkAll a {
-    text-decoration: none;
     color: #888888;
 }
 
 .firstInternship,
 .secondInternship,
 .thirdInternship {
-    display: flex;
-    flex-direction: column;
     background-color: #FFFFFF;
-    width: 100%;
+    width: 30.7%;
     border-radius: 27px;
-    padding: 2rem 1rem;
-    margin: 0rem 2rem;
     box-shadow: 2px 2px 30px 2px #00000015;
-    justify-content: space-between;
-
 }
+.companySave button{
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.firstInternship a
+,.secondInternship a
+,.thirdInternship a{
+    display: flex;
+    padding: 8% 8% 0% 8%;
+    margin: 0 0 8% 0;
+    width: 84%;
+    height: 90%;
+    flex-direction: column;}
 
 .companySave {
     display: flex;
@@ -72,24 +79,26 @@
 }
 
 .job h3 {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 .5rem 0;
+    font-weight: 500;
 }
 
 .job h5 {
-    margin: 0;
+    color: #585858;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
-.location a {
+.location{
     display: flex;
     align-items: center;
+    margin: .7rem 0 0 0;
 }
 
-.location a {
-    text-decoration: none;
-}
+
 
 .location img {
-    margin: 0 1rem 0 0;
+    margin: 0 .5rem 0 0;
 }
 
 .howWork {
@@ -112,26 +121,29 @@
 }
 
 .step1 {
+    background-color: #FFFFFF;
+    width: 30.7%;
+    height: 13rem;
+    border-radius: 27px;
+    box-shadow: 2px 2px 30px 2px #00000015;
+}
+.step1-content{
+    height: 90%;
+    margin: 0 5% 5% 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #FFFFFF;
-    width: 100%;
-    height: 12rem;
-    margin: 0rem 2rem;
-    border-radius: 27px;
-    padding: 1rem 2rem;
-    box-shadow: 2px 2px 30px 2px #00000015;
+  
 }
 
-.step1 h3 {
+.step1-content h3 {
     margin: .5rem 0 0 0;
     font-size: 22px;
     font-weight: 500;
     color: #585858;
 }
 
-.step1 p {
+.step1-content p {
     font-size: 14px;
     text-align: justify;
     line-height: 1.5;
@@ -139,7 +151,7 @@
 
 }
 
-.step1 a {
+.step1-content button {
     font-size: 1rem;
     padding: 0.5rem 0rem;
     text-align: center;
