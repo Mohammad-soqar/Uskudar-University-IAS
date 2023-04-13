@@ -12,65 +12,60 @@
 
 <body>
     <!-- ----------side menu bar---------- -->
-    <div class="wrapper">
-        <section class="side-bar">
-            <div class="logo">
+    <!-- ----------side menu bar---------- -->
+    <section class="side-bar">
+        <div class="logo">
+            <a href="">
+                <img src="img\logo.png" alt="" height="120rem">
+            </a>
+        </div>
+        <div class="icons">
+            <div class="home">
                 <a href="">
-                    <img src="img\logo.png" alt="" height="120rem">
+                    <img src="img\home-symbol.png" alt="" height="27px">
+                    <p>Home</p>
                 </a>
             </div>
-            <div class="icons">
-                <div class="home">
-                    <a href="">
-                        <img src="img\home-symbol.png" alt="" height="27px">
-                        <p>Home</p>
-                    </a>
-                </div>
-                <!-- ----------Messages Dropdown Menu---------- -->
+            <!-- ----------Messages Dropdown Menu---------- -->
 
-                <div class="Messages">
-                    <label for="Messagestouch"><span class="MessagesHead"><img src="img\messages-symbol.png" alt=""
-                                width="27px " height="22px">
-                            <p>Messages</p>
-                        </span></label>
-                    <input type="checkbox" id="Messagestouch">
-
-                    <ul class="Messagesslide">
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">Compose Message</a></li>
-                        <li><a href="#">Sent Messages</a></li>
-                    </ul>
+            <div class="Messages">
+                <div id="dropdown-messages-student">
+                    <img src="img\messages-symbol.png" alt="" width="27px " height="22px">
+                    <p> Messages <img id="down-arrow-home-student" src="img\Dowm-arrow.png" alt="" width="25.9px"
+                            height="14.8px">
+                    </p>
                 </div>
 
-                <!-- ----------Messages Dropdown Menu---------- -->
-                <div class="internship">
-                    <a href="">
-                        <img src="img\internship-symbol.png" alt="" height="22px">
-                        <p>Internship</p>
-                    </a>
-                </div>
-                <div class="forms">
-                    <a href="">
-                        <img src="img\forms-symbol.png" alt="" height="27px">
-                        <p>Forms</p>
-                    </a>
-                </div>
-                <div class="guide"><a href="">
-                        <img src="img\guide-symbol.png" alt="" height="23px">
-                        <p>Guide</p>
-                    </a>
-                </div>
+                <ul class="Messagesslide">
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">Compose Message</a></li>
+                </ul>
             </div>
 
-            <div class="logout-support-hr">
-                <div class="logout-support">
-                    <hr>
-                    <div class="logout">
-                        <a href="">
-                            <img src="img\logout-symbol.png" alt="" height="27px">
-                            <p>Logout</p>
-                        </a>
-                    </div>
+            <!-- ----------Messages Dropdown Menu---------- -->
+            <div class="internship">
+                <a href="">
+                    <img src="img\internship-symbol.png" alt="" height="22px">
+                    <p>Internship</p>
+                </a>
+            </div>
+            <div class="forms">
+                <a href="">
+                    <img src="img\forms-symbol.png" alt="" height="27px">
+                    <p>Forms</p>
+                </a>
+            </div>
+            <div class="guide"><a href="">
+                    <img src="img\guide-symbol.png" alt="" height="23px">
+                    <p>Guide</p>
+                </a>
+            </div>
+            <div class="logout-support">
+                <div class="logout">
+                    <a href="">
+                        <img src="img\logout-symbol.png" alt="" height="27px">
+                        <p>Logout</p>
+                    </a>
                 </div>
                 <div class="support">
                     <a href="">
@@ -80,9 +75,13 @@
                 </div>
 
             </div>
-        </section>
-        <!-- ----------side menu bar---------- -->
 
+        </div>
+
+
+    </section>
+    <!-- ----------side menu bar---------- -->
+    <div class="right-section">
         <div class="contents">
             <!-- ----------nav menu bar---------- -->
             <section class="nav-bar">
@@ -218,8 +217,8 @@
 
             </section>
         </div>
-
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 

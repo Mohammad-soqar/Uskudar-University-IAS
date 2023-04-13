@@ -137,6 +137,12 @@ table {
 p {
     color: #585858 !important;
 }
+a{
+    text-decoration: none;
+    color: #585858 !important;
+
+}
+/*----------------------reset code-----------------*/ 
 
 body {
     margin: 0;
@@ -147,12 +153,22 @@ body {
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  
     height: 100vh;
-}
+} 
 
+.side-bar {
+    background-color: #FFFFFF;
+    float: left;
+    height: 100vh;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.Messagesslide{
+    display: none;
+}
 .logo {
     text-align: center;
     margin: 1rem 0 3rem 0;
@@ -160,35 +176,29 @@ body {
 
 .icons {
     width: 80%;
+    display: flex;
+    flex-direction: column;
     margin: 0 2rem 0 2rem;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
-
-.side-bar {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.home a,
-.internship a,
-.forms a,
-.guide a {
+.home a
+,.internship a
+,.forms a
+,.guide a 
+{
     display: flex;
     align-items: center;
-    text-decoration: none;
 }
-
-.home p,
-.internship p,
-.forms p,
-.guide p {
+#dropdown-messages-student{
+    display: flex;
+    align-items: center;
+}
+.home p
+,.internship p
+,.forms p
+,.guide p
+,.Messages p{
     font-size: 20px;
     font-weight: 500;
-    color: #585858;
     margin: 0 0 0 1rem;
 }
 .home,
@@ -196,108 +206,66 @@ body {
 .internship,
 .forms,
 .guide{
-    margin: 0rem 0rem 2rem 0rem ;
+    margin-bottom: calc(4.5vh);
 
 }
-
-
-/*----------Messages Dropdown Menu----------*/
-
-.Messages {
+#dropdown-messages-student p{
     width: 100%;
-    border-radius: 27px;
-}
-
-.Messages p {
-    margin: 0 3rem 0 1rem;
-    color: #585858;
-}
-
-.MessagesHead {
-    font-size: 1.2em;
-    font-weight: 500;
-    cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 27px;
+    justify-content: space-between;
 }
-
-.MessagesHead::after {
-    float: inline-start;
-    right: 10%;
-    content: "\221F";
-    transform: rotate(-45deg);
-}
-
-.Messagesslide {
-    clear: both;
-    width: 100%;
-    height: 0px;
-    overflow: hidden;
-    transition: height .4s ease;
-}
-
-.Messagesslide a {
+.Messages ul {
+    margin: 1rem 0 0 2rem;
     text-decoration: none;
 }
-
-.Messagesslide li {
-    list-style-type: none;
+.Messages ul li {
+    margin: 0 0 1rem 0;
 }
-
-.Messagesslide li {
-    padding: 3px;
+.Messagesslide a {
+    display: block;
+    font-size: 18px;
 }
-
-#Messagestouch {
-    position: absolute;
-    opacity: 0;
-    height: 0px;
-}
-
-#Messagestouch:checked+.Messagesslide {
-    height: 100px;
-}
-
-.Messagesslide li {padding : 3px;}
-      
-#Messagestouch {position: absolute; opacity: 0; height: 0px;}    
-      
-#Messagestouch:checked + .Messagesslide {height: 65px;} 
-
-
-/*----------Messages Dropdown menu----------*/
-.logout-support-hr {
-    margin: 2rem 0 0 0;
+.logout-support{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 25%;
 }
-
-.logout {
+.logout{
+    border-top: 1px solid #585858;
+}
+.logout a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 1rem 0 0 0;
 }
-
-.logout a,
 .support a {
     display: flex;
     align-items: center;
-    text-decoration: none;
+    justify-content: center;
+    margin: 1rem 0 0 0;
 }
-
 .logout p,
 .support p {
+    font-size: 18px;
+    font-weight: 500;
     margin: 0 0 0 1rem;
+}
+.support {
+    position: fixed;
+    bottom: 1.5rem;
 }
 
 /*----------side menu bar---------- */
 
 /*------- Student page side------*/
-.contents {
-    margin: 0rem 6rem;
+.right-section {
+    margin: 0 0 0 16rem;
+    position: fixed;
+}
+.contents{
+    margin: 1rem 6rem 0 6rem;
 }
 
 
@@ -306,7 +274,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 0rem;
 
 }
 

@@ -18,6 +18,31 @@ function startProgressAnimation() {
   }
 }
 
+
+/* dropdown menue for messages Home page student  */
+
+var angle22 = 0;
+$('#dropdown-messages-student').click(function(){
+  $('.Messagesslide').slideToggle();
+  angle22 += 180;
+  $('#down-arrow-home-student').css({
+    'transform': 'rotate(' + angle22 + 'deg)',
+    '-moz-transform': 'rotate(' + angle22 + 'deg)',
+    'transition': 'transform 0.5s ease-in-out'
+  });
+  if((angle22/180)%2!=0){
+    $('.Messages').css({
+      'margin-bottom':'0',
+      'transition': 'margin-bottom 0.5s ease-in-out'
+    })}
+    else{
+      $('.Messages').css({
+        'margin-bottom':'calc(4.5vh)',
+        'transition': 'margin-bottom 0.5s ease-in-out'
+      })}
+  
+}); 
+
 /* dropdown menue for questions and answers support student page  */
 var angle = 0;
 $('.question1').click (function(){
