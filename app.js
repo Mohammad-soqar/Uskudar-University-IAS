@@ -32,7 +32,7 @@ $('#dropdown-messages-student').click(function(){
   });
   if((angle22/180)%2!=0){
     $('.Messages').css({
-      'margin-bottom':'0',
+      'margin-bottom':'1rem',
       'transition': 'margin-bottom 0.5s ease-in-out'
     })}
     else{
