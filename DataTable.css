@@ -1,0 +1,59 @@
+.DataTable {
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+thead {
+  background-color: #F5F5F5;
+}
+
+.center {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 18px !important;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+th {
+  cursor: pointer;
+}
+
+.sort {
+  margin-left: 5px;
+}
+
+
+#searchInput {
+  margin-bottom: 10px;
+}
+
+.rotateImage img {
+  transition: transform 0.5s;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+.pending div{
+  color: #AE9100;
+  background-color: #FFF8D4 !important;
+}
+.completed div{
+  color: #007505;
+  background-color: #EBF8EC !important;
+}
+.state div{
+  padding: 0.3rem 0.6rem;
+  border-radius: 19px;
+  font-weight: 500;
+}
