@@ -1,23 +1,21 @@
 let progressCounter = 0;
 
 
-document.getElementById('startButton').addEventListener('click', startProgressAnimation);
-
+$('#startButton').on('click', startProgressAnimation);
 
 function startProgressAnimation() {
-  const circle = document.querySelectorAll('.progress-circle')[progressCounter];
-  const line = document.querySelectorAll('.progress-line')[progressCounter];
+  const circle = $('.progress-circle').eq(progressCounter);
+  const line = $('.progress-line').eq(progressCounter);
 
-  circle.classList.add('progress-animation');
-  line.classList.add('progress-animation2');
+  circle.addClass('progress-animation');
+  line.addClass('progress-animation2');
 
   progressCounter++;
 
-  if (progressCounter >= document.querySelectorAll('.progress-circle').length) {
+  if (progressCounter >= $('.progress-circle').length) {
     progressCounter = 0;
   }
 }
-
 
 /* dropdown menue for messages Home page student  */
 
@@ -75,11 +73,11 @@ $('.question4').click (function(){
     $('#down-arrow4').css('transform','rotate(' + angle4 + 'deg)');
 });
 
-
-
 $('#check-all').on('click', function() {
   $('.right-section-widgets').addClass('collapse');
 });
+
+
 
 
 
