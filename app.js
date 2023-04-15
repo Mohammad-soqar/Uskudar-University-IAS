@@ -73,11 +73,48 @@ $('.question4').click (function(){
     $('#down-arrow4').css('transform','rotate(' + angle4 + 'deg)');
 });
 
-$('#check-all').on('click', function() {
-  $('.right-section-widgets').addClass('collapse');
+$(document).ready(function() {
+  $('#check-all').on('click', function() {
+    // Add 'collapse' class to 'right-section-widgets' div
+    $('.right-section-widgets').addClass('collapse');
+    // Animate the width of 'widget-left-side' div to 100% over 0.5 seconds
+    $('.widget-left-side').animate({width: '90%'}, 500, function() {
+      // Hide the content of 'widget-left-side' div after animation completes
+      $(this).css('overflow', 'hidden');
+    });
+    // Add 'overflow: hidden;' property to 'right-section-widgets' div
+    $('.right-section-widgets').css('overflow', 'hidden');
+    $('#back-left').css({
+      'color': '#585858',
+      'border': 'none',
+      'background-color': '#FFD504'
+    });
+    $('#searchInput').css('display', 'block');
+    $('#check-all').css('display', 'none');
+
+  });
+  $('#back-left').on('click', function() {
+    $("#searchInput").val("");
+    // Remove 'collapse' class from 'right-section-widgets' div
+    $('.right-section-widgets').removeClass('collapse');
+    // Set the width of 'widget-left-side' div back to 50% over 0.5 seconds
+    $('.widget-left-side').animate({width: '85.5%'}, 500, function() {
+      // Show the content of 'widget-left-side' div after animation completes
+      
+    });
+    // Remove 'overflow: hidden;' property from 'right-section-widgets' div
+    $('.right-section-widgets').css('overflow', 'visible');
+    $('#back-left').css({
+      'color': 'transparent',
+      'border': 'none',
+      'background-color': 'transparent'
+    });
+    $('#searchInput').css('display', 'none');
+    $('#check-all').css('display', 'block');
+    $('tr').css('display', '');
+    
+  });
 });
-
-
 
 
 

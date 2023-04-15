@@ -260,9 +260,14 @@ body {
 /*----------side menu bar---------- */
 
 /*------- Student page side------*/
-.right-section {
-    margin: 0 0 0 16rem;
-}
+
+.container {
+    display: grid;
+    grid-template-columns: 255px 1fr; /* set desired width for sidebar */
+    /* Add other CSS properties for styling */
+  }
+  
+
 .contents{
     margin: 0rem 6rem 0 6rem;
 }

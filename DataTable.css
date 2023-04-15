@@ -69,4 +69,11 @@ td{
   padding: 0.3rem 0.6rem;
   border-radius: 19px;
   font-weight: 500;
+
+}
+
+#back-left{
+  background: transparent;
+  border: none;
+  color: transparent;
 }

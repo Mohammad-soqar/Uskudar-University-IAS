@@ -1,4 +1,7 @@
+
+
 .nav-bar {
+ 
   justify-content: flex-end !important;
 }
 
@@ -32,14 +35,23 @@
   display: flex;
   align-items: center;
   width: 100%;
-  transition: 0.5s;
+ 
   justify-content: space-between;
 }
 
 .Icon-text{
   display: flex;
   align-items: center;
+} 
+
+.right-section-widgets {
+  display: flex;
+  transition: width 0.5s ease; /* Add transition property for smooth animation */
 }
+
+
+
+
 
 .widget-left-side p,.widget-right-side p {
   color: #585858;
@@ -66,7 +78,6 @@
   flex-direction: column;
   display: flex;
   margin: 0rem 2rem 0rem 0rem;
-
   justify-content: center;
   align-items: flex-start;
   padding: 30px;
@@ -112,6 +123,17 @@
   width: 60%;
 }
 
-.collapse{
+.right-section-widgets {
+  display: flex;
+  transition: width 0.5s ease;
+   /* Add overflow property to hide content when width is 0 */
+}
+
+
+.collapse {
+  width: 0; 
+}
+
+#searchInput{
   display: none;
 }
