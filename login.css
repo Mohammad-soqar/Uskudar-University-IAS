@@ -1,0 +1,211 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+body {
+    background-image: url(img/login/unibuilding.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: padding-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffffff1;
+    padding: 3rem 4rem !important;
+    border-radius: 21px;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.btns-margin {
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+.RegisterForm button {
+    box-sizing: border-box;
+    border: none;
+    background-color: #00B1AC;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0.5rem 0rem 0rem 0rem;
+    border-radius: 21px;
+
+}
+
+.signin button,
+.atag {
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    background-color: #00B1AC;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 30px 0px 30px 0px;
+    border-radius: 16px;
+    font: 20px 'MontserratMedium', sans-serif;
+}
+
+
+
+
+.inputQue {
+    margin: 20px 0px 0px 0px;
+
+}
+
+.inputQue span {
+    margin: 0px 0px 20px 0px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
+
+input,
+select {
+    box-sizing: border-box;
+    border: solid #FFD504 2px;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+input,
+label,
+select {
+    box-sizing: border-box;
+    width: 100%;
+    margin: .2rem 0;
+}
+
+input:focus {
+    outline: none !important;
+    border-bottom: solid #585858 3.5px;
+}
+
+
+
+.ForgotPassword {
+    margin: 1rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+.ForgotPassword a {
+    text-decoration: none;
+    color: #585858;
+}
+
+
+
+
+@media only screen and (min-width: 750px) {
+    .RegisterSection {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 750px) {
+    .RegisterSection {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+    }
+
+    .RegisterForm {
+
+        display: flex;
+        flex-direction: column;
+        margin: 0px 30px;
+        align-items: center;
+    }
+
+
+}
+
+#help-panel {
+    position: absolute;
+    top: 40%;
+    left: -190px;
+    /* Initial position of the help panel outside the viewport on the left */
+    width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #00B1AC;
+    transition: left 0.3s ease;
+    border-radius: 21px;
+    /* Add transition effect for smooth sliding animation */
+    /* Add other styles for the help panel */
+}
+
+#help-button{
+    font-family: inter;
+    font-weight: 700;
+    font-size: 16pt;
+    margin: 0rem -1rem 0rem 0rem;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+#help-button p{
+    color: #ffffff !important;
+    margin: 0rem 0.5rem 0rem 0rem;
+
+}
+
+.help-title {
+   
+}
+
+.help-title p {
+    font-size: 16pt;
+    color: #ffffff !important;
+}
+
+
+.user-select {
+    margin: 0rem 0rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-select a {
+    margin: 0.3rem 0rem;
+    border-radius: 21px;
+    padding: 0.5rem ;
+    background-color: #ffffff;
+   
+}
+
+.help-panel-visible {
+    left: -20px !important;
+    /* Position the help panel at 0px from the left to make it visible */
+}

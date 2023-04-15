@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <main>
+<!-- 
+  <div id="help-panel">
+    <button id="help-button">Help</button>
+
+    <div class="user-select">
+        <a href="" class="usersLogin">Student</a>
+        <a href="" class="usersLogin">Internship Coordinator</a>
+        <a href="" class="usersLogin">Career Center</a>
+    </div>
+  </div> -->
+
+        <div  id="help-panel">
+            <div>
+                <button id="help-button"><p>help</p> <img src="img/support-symbol-white.png" alt=""></button>
+
+            </div>
+               
+          
+
+            <div class="user-select">
+                <a href="Student.html" class="usersLogin">Student</a>
+                <a href="" class="usersLogin">Internship Coordinator</a>
+                <a href="CareerCenter.html" class="usersLogin">Career Center</a>
+            </div> 
+           
+        </div>
+        <section class="RegisterSection">
+
+            <form class="RegisterForm" id="account" method="post">
+                <div class="Left-Side">
+                    <div class="title">
+                        <img src="img/logo.png" width="120px">
+
+                    </div>
+                    <div class="inputQue">
+                        <label>Student Id</label>
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username"
+                            aria-required="true" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="inputQue">
+                        <label>Password</label>
+                        <input UseSubmitBehavior="false" type="password" id="password-field" asp-for="Input.Password"
+                            class="form-control" autocomplete="new-password" aria-required="true" />
+                        <span style=" -webkit-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;" toggle="#password-field" class="hello toggle-password">
+                            Show Password
+                        </span>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+
+
+
+
+
+                    <div class="btns-margin">
+                        <button id="login-submit" type="submit" class="loginbut">Login</button>
+                        <button id="login-submit" type="submit" class="loginbut">Login with E-devlet</button>
+                    </div>
+
+
+                    <div class="ForgotPassword">
+                        <a id="forgot-password" href="#">Forgot your password?</a>
+                    </div>
+
+
+                </div>
+            </form>
+
+
+        </section>
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="login.js" ></script>
+</body>
+
+</html>
