@@ -19,59 +19,53 @@ function startProgressAnimation() {
 
 /* dropdown menue for messages Home page student  */
 
-var angle22 = 0;
-$('#dropdown-messages-student').click(function(){
-  $('.Messagesslide').slideToggle();
-  angle22 += 180;
-  $('#down-arrow-home-student').css({
-    'transform': 'rotate(' + angle22 + 'deg)',
-    '-moz-transform': 'rotate(' + angle22 + 'deg)',
-    'transition': 'transform 0.5s ease-in-out'
-  });
+$(document).ready(function() {
+  var angle22 = 0;
+  $('#dropdown-messages-student').click(function(){
+    $('.Messagesslide').slideToggle();
+    angle22 += 180;
+    angle22 = angle22 % 360; 
+    $('#down-arrow-home-student').css({
+      'transform': 'rotate(' + angle22 + 'deg)',
+      'transition': 'transform 0.5s ease-in-out'
+    });
+    
   if((angle22/180)%2!=0){
     $('.Messages').css({
-      'margin-bottom':'1rem',
+      'margin-bottom':'0',
       'transition': 'margin-bottom 0.5s ease-in-out'
     })}
     else{
       $('.Messages').css({
         'margin-bottom':'calc(4.5vh)',
         'transition': 'margin-bottom 0.5s ease-in-out'
-      })}
-  
-}); 
+      })} 
+  });
+  });
 
 /* dropdown menue for questions and answers support student page  */
-var angle = 0;
-$('.question1').click (function(){
-  $('.answer1').slideToggle();
-  angle += 180;
-    $('#down-arrow1').css('transform','rotate(' + angle + 'deg)');
-});
+function toggleAnswer(questionClass, answerClass, arrowId, angle) {
+  $(questionClass).click(function() {
+    $(answerClass).slideToggle();
+    angle += 180;
+    angle = angle % 360;
+    $(arrowId).css({
+      'transform':'rotate(' + angle + 'deg)',
+      'transition': 'transform 0.5s ease-in-out'
+    });
+  });
+}
+var angle1 = 0;
+toggleAnswer('.question1', '.answer1', '#down-arrow1', angle1);
 
 var angle2 = 0;
-$('.question2').click (function(){
-  $('.answer2').slideToggle();
-  angle2 += 180;
-    $('#down-arrow2').css('transform','rotate(' + angle2 + 'deg)');
-});
-
+toggleAnswer('.question2', '.answer2', '#down-arrow2', angle2);
 
 var angle3 = 0;
-$('.question3').click (function(){
-  $('.answer3').slideToggle();
-  angle3 += 180;
-    $('#down-arrow3').css('transform','rotate(' + angle3 + 'deg)');
-});
-
-
+toggleAnswer('.question3', '.answer3', '#down-arrow3', angle3);
 
 var angle4 = 0;
-$('.question4').click (function(){
-  $('.answer4').slideToggle();
-  angle4 += 180;
-    $('#down-arrow4').css('transform','rotate(' + angle4 + 'deg)');
-});
+toggleAnswer('.question4', '.answer4', '#down-arrow4', angle4);
 
 $(document).ready(function() {
   $('#check-all').on('click', function() {
