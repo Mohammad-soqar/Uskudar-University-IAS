@@ -30,7 +30,7 @@
                     </a>
                 </div>
                 <!-- ----------Messages Dropdown Menu---------- -->
-    
+
                 <div class="Messages">
                     <div id="dropdown-messages-student">
                         <img src="img\messages-symbol.png" alt="" width="27px " height="22px">
@@ -38,13 +38,13 @@
                                 height="14.8px">
                         </p>
                     </div>
-    
+
                     <ul class="Messagesslide">
                         <li><a href="#">Inbox</a></li>
                         <li><a href="#">Compose Message</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- ----------Messages Dropdown Menu---------- -->
                 <div class="internship">
                     <a href="">
@@ -76,21 +76,21 @@
                             <p>Support</p>
                         </a>
                     </div>
-    
+
                 </div>
-    
+
             </div>
-    
-    
+
+
         </section>
         <!-- ----------side menu bar---------- -->
         <div class="right-section">
             <div class="contents">
-    
+
                 <section class="nav-bar">
-    
-    
-    
+
+
+
                     <div class="call-to-action-btns">
                         <a href=""><img src="img/messages.png" alt="" height="32px"></a>
                         <a href=""><img src="img/Notification.png" alt="" height="35px"></a>
@@ -103,23 +103,14 @@
                         </a>
                     </div>
                 </section>
-    
-                <button id="back-left">Back &#x2192;</button>
+
+                <button id="back-left">&#x2190; Back</button>
                 <section class="CareerCenter-Content">
-    
+
                     <div class="left-section both-sides">
-                       
-    
-                        <!--  <div class="widget-left-side widgets-shared">
-                            <div class="Icon-text">
-                                <img src="img/CareerCenter/Files.png" alt="">
-                                <p>Application Form Approval</p>
-                            </div>
-                            <img src="img/CareerCenter/Files-grey-1.png" alt="" class="hover-image">
-                        </div> -->
-    
+
                         <div class="widget-left-side widgets-shared">
-    
+
                             <div class="widgetHeader">
                                 <div class="Icon-text">
                                     <img src="img/CareerCenter/HealthInsurance.png" height="45px" alt="">
@@ -127,28 +118,28 @@
                                 </div>
                                 <div class="check-all-btn">
                                     <button id="check-all">Check all &#x2192;</button>
-                                    <input type="text" id="searchInput" placeholder="Search..."> 
+                                    <input type="text" id="searchInput" placeholder="Search...">
                                 </div>
-    
+
                             </div>
                             <div class="DataTable">
-    
+
                                 <table id="studentTable">
                                     <thead>
                                         <tr>
                                             <th onclick="sortTable(0)">Student Name
-    
+
                                                 <img id="nameSort" class="sort rotateImage"
                                                     src="img/CareerCenter/arrowUp.png" alt="">
                                             </th>
-    
+
                                             <th onclick="sortTable(1)">Student ID
-    
-                                                <img class="sort rotateImage" id="idSort" src="img/CareerCenter/arrowUp.png"
-                                                    alt="">
-    
+
+                                                <img class="sort rotateImage" id="idSort"
+                                                    src="img/CareerCenter/arrowUp.png" alt="">
+
                                             </th>
-    
+
                                             <th onclick="sortTable(2)">State
                                                 <img id="stateSort" class="sort rotateImage"
                                                     src="img/CareerCenter/arrowUp.png" alt="">
@@ -197,43 +188,72 @@
                                 </table>
                             </div>
                         </div>
-    
-    
+
+
                     </div>
-    
+
                     <div id="right-widgets" class="right-section-widgets both-sides">
-                        <div class="widget-right-side widgets-shared">
-                            <p>Add User</p>
-                            <img src="img/CareerCenter/AddUser.png" height="45px" alt="">
+
+                        <div class="widgets-shared" id="widget1">
+                            <div class="widget-right-side">
+                                <p>Add User</p>
+                                <img src="img/CareerCenter/AddUser.png" height="45px" alt="">
+                            </div>
+                           <!--  <form id="Add-User-Form">
+                                <div class="Two-Inputs-line">
+                                    <div>
+                                        <label for="">Full Name</label>
+                                        <input type="text">
+                                    </div>
+
+                                    <div>
+                                        <label for="">Email</label>
+                                        <input type="text">
+                                    </div>
+                                   
+                                </div>
+                                <div>
+                                    <label for="">password</label>
+                                    <input type="text">
+                                    <button>Generate password</button>
+                                </div>
+                                <div>
+                                    <label for="">Role</label>
+                                    <select name="" id="">
+                                        <option value="" disabled selected>sdasd</option>
+                                    </select>
+                                </div>
+                                <button>Confirm</button>
+                            </form> -->
                         </div>
-                        <div class="widget-right-side widgets-shared">
+                        <div class="widget-right-side widgets-shared" id="widget2">
                             <p>Health Insurance</p>
                             <img src="img/CareerCenter/HealthInsurance.png" height="45px" alt="">
                         </div>
-                        <div class="widget-right-side widgets-shared">
+                        <div class="widget-right-side widgets-shared" id="widget3">
                             <p>Add New Announcement</p>
                             <img src="img/CareerCenter/Notification.png" height="45px" alt="">
                         </div>
-                        <div class="widget-right-side widgets-shared">
+                        <div class="widget-right-side widgets-shared" id="widget4">
                             <p>Add Internship opportunity</p>
                             <img src="img/CareerCenter/SuitCase.png" height="45px" alt="">
                         </div>
                     </div>
                 </section>
-    
-    
+
+
             </div>
     </main>
-  
 
 
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="app.js"></script>
-        <script src="new.js"></script>
-        <script src="DataTable.js"></script>
-        <script src="Hover.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="new.js"></script>
+    <script src="DataTable.js"></script>
+    <script src="Hover.js"></script>
 </body>
 
 </html>

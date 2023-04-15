@@ -1,7 +1,5 @@
-
-
 .nav-bar {
- 
+
   justify-content: flex-end !important;
 }
 
@@ -24,7 +22,7 @@
   background-color: #fff;
   box-shadow: 2px 2px 30px 2px #00000015;
   border-radius: 27px;
-  display: flex;
+
 }
 
 .nav-bar {
@@ -35,25 +33,26 @@
   display: flex;
   align-items: center;
   width: 100%;
- 
+
   justify-content: space-between;
 }
 
-.Icon-text{
+.Icon-text {
   display: flex;
   align-items: center;
-} 
+}
 
 .right-section-widgets {
   display: flex;
-  transition: width 0.5s ease; /* Add transition property for smooth animation */
+  transition: width 0.5s ease;
 }
 
 
 
 
 
-.widget-left-side p,.widget-right-side p {
+.widget-left-side p,
+.widget-right-side p {
   color: #585858;
   font-size: 20px;
   font-family: inter;
@@ -91,11 +90,11 @@
 
 }
 
-.DataTable{
+.DataTable {
   margin: 1.5rem 0rem 0rem 0rem;
 }
 
-.widget-right-side{
+.widget-right-side {
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -106,34 +105,94 @@
   margin: 0px 10px 0px 0px
 }
 
-.right-section-widgets{
+.right-section-widgets {
   width: 70%;
   justify-content: space-between;
 }
 
-.check-all-btn button{
+.check-all-btn button {
   background-color: transparent;
   border: none;
   font-family: inter;
   font-size: 16px;
   cursor: pointer;
+
 }
 
-.widget-right-side p{
+.widget-right-side p {
   width: 60%;
 }
 
 .right-section-widgets {
   display: flex;
   transition: width 0.5s ease;
-   /* Add overflow property to hide content when width is 0 */
+  /* Add overflow property to hide content when width is 0 */
 }
 
 
 .collapse {
-  width: 0; 
+  width: 0;
 }
 
-#searchInput{
+#searchInput {
   display: none;
+}
+
+#back-left{
+  position: absolute;
+  padding: 0.5rem;
+  font-size: 18px;
+  top: 15%;
+}
+
+.back-left-btn {
+  color: #fff !important;
+  border: none !important;
+  background-color: #FFD504 !important;
+  border-radius: 21px;
+  cursor: pointer;
+  
+  
+}
+#Add-User-Form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Two-Inputs-line {
+  display: flex;
+  gap: 10px;
+  flex: 1 1 100%; /* Flexbox 1:1:100% to stretch to available space */
+}
+
+.Two-Inputs-line > div {
+  flex: 1;
+}
+
+.Two-Inputs-line label {
+  flex: 0 0 100px; /* Adjust the width of the labels as needed */
+}
+
+.Two-Inputs-line input[type="text"] {
+  flex: 1;
+}
+
+#Add-User-Form > div {
+  flex: 1 1 100%; /* Flexbox 1:1:100% to stretch to available space */
+  margin-top: 10px;
+}
+
+#Add-User-Form > div label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#Add-User-Form > div select {
+  width: 100%;
+}
+
+#Add-User-Form button {
+  margin-top: 10px;
+  align-self: flex-end;
 }
