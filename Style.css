@@ -216,6 +216,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .Messages ul {
     margin: 1rem 0 0 2rem;

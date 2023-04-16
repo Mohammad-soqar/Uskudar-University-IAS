@@ -34,8 +34,7 @@
                 <div class="Messages">
                     <div id="dropdown-messages-student">
                         <img src="img\messages-symbol.png" alt="" width="27px " height="22px">
-                        <p> Messages <img id="down-arrow-home-student" src="img\Dowm-arrow.png" alt="" width="25.9px"
-                                height="14.8px">
+                        <p> Messages <img id="down-arrow-home-student" src="img\Dowm-arrow.png" alt="" height="10px">
                         </p>
                     </div>
 
@@ -103,12 +102,11 @@
                         </a>
                     </div>
                 </section>
-
-                <button id="back-left">&#x2190; Back</button>
+                <div id="back-buttons"></div>
+               
                 <section class="CareerCenter-Content">
 
                     <div class="left-section both-sides">
-
                         <div class="widget-left-side widgets-shared">
 
                             <div class="widgetHeader">
@@ -188,18 +186,16 @@
                                 </table>
                             </div>
                         </div>
-
-
                     </div>
 
                     <div id="right-widgets" class="right-section-widgets both-sides">
 
                         <div class="widgets-shared" id="widget1">
-                            <div class="widget-right-side">
+                            <div id="Add-User-btn" class="widget-right-side">
                                 <p>Add User</p>
                                 <img src="img/CareerCenter/AddUser.png" height="45px" alt="">
                             </div>
-                           <!--  <form id="Add-User-Form">
+                            <form class="Add-User-Form-invisible" id="Add-User-Form">
                                 <div class="Two-Inputs-line">
                                     <div>
                                         <label for="">Full Name</label>
@@ -210,12 +206,14 @@
                                         <label for="">Email</label>
                                         <input type="text">
                                     </div>
-                                   
+
                                 </div>
                                 <div>
                                     <label for="">password</label>
-                                    <input type="text">
-                                    <button>Generate password</button>
+                                    <input type="text" id="passwordField">
+                                    <button type="button" id="generateBtn">Generate</button>
+                                    <button type="button" id="copyBtn">Copy</button>
+                            
                                 </div>
                                 <div>
                                     <label for="">Role</label>
@@ -224,19 +222,147 @@
                                     </select>
                                 </div>
                                 <button>Confirm</button>
-                            </form> -->
+                            </form>
                         </div>
-                        <div class="widget-right-side widgets-shared" id="widget2">
-                            <p>Health Insurance</p>
-                            <img src="img/CareerCenter/HealthInsurance.png" height="45px" alt="">
+
+
+                        <div class="widgets-shared" id="widget2">
+                            <div id="old-HealthI-btn" class="widget-right-side">
+                                <p>Old Health Insurance</p>
+                                <img src="img/CareerCenter/HealthInsurance.png" height="45px" alt="">
+                            </div>
+                            
+
+                            <div id="datatable" class="DataTable Add-User-Form-invisible">
+
+                                <table id="studentTable">
+                                    <thead>
+                                        <tr>
+                                            <th onclick="sortTable(0)">Student Name
+
+                                                <img id="nameSort" class="sort rotateImage"
+                                                    src="img/CareerCenter/arrowUp.png" alt="">
+                                            </th>
+
+                                            <th onclick="sortTable(1)">Student ID
+
+                                                <img class="sort rotateImage" id="idSort"
+                                                    src="img/CareerCenter/arrowUp.png" alt="">
+
+                                            </th>
+
+                                            <th onclick="sortTable(2)">State
+                                                <img id="stateSort" class="sort rotateImage"
+                                                    src="img/CareerCenter/arrowUp.png" alt="">
+                                            </th>
+                                            <th class="center">Upload</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Dwayne Johnson</td>
+                                            <td>200111111</td>
+                                            <td class=" center state pending">
+                                                <div>Pending</div>
+                                            </td>
+                                            <td class="center"><img src="img/CareerCenter/Upload.png" alt="Upload"
+                                                    class="upload-icon"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ryan Reynolds</td>
+                                            <td>200111112</td>
+                                            <td class=" center state pending">
+                                                <div>Pending</div>
+                                            </td>
+                                            <td class="center"><img src="img/CareerCenter/Upload.png" alt="Upload"
+                                                    class="upload-icon"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adele Adkins Adele Adkins Adele Adkins</td>
+                                            <td>200111113</td>
+                                            <td class="center state pending">
+                                                <div>Pending</div>
+                                            </td>
+                                            <td class="center"><img src="img/CareerCenter/Upload.png" alt="Upload"
+                                                    class="upload-icon"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ryan Reynolds</td>
+                                            <td>200111114</td>
+                                            <td class=" center state completed">
+                                                <div>Completed</div>
+                                            </td>
+                                            <td class="center"><img src="img/CareerCenter/Upload.png" alt="Upload"
+                                                    class="upload-icon"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </div>
-                        <div class="widget-right-side widgets-shared" id="widget3">
-                            <p>Add New Announcement</p>
-                            <img src="img/CareerCenter/Notification.png" height="45px" alt="">
+
+                        <div class="widgets-shared" id="widget3">
+                            <div id="Add-Announcement-btn" class="widget-right-side">
+                                <p>Add New Announcement</p>
+                                <img src="img/CareerCenter/Notification.png" height="45px" alt="">
+                            </div>
+                            <form class="Add-User-Form-invisible" id="Add-User-Form">
+                                <div class="Two-Inputs-line">
+                                    <div>
+                                        <label for="">Full Name</label>
+                                        <input type="text">
+                                    </div>
+
+                                    <div>
+                                        <label for="">Email</label>
+                                        <input type="text">
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <label for="">password</label>
+                                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                                   
+                                </div>
+                              
+                                <button>Confirm</button>
+                            </form>
                         </div>
-                        <div class="widget-right-side widgets-shared" id="widget4">
-                            <p>Add Internship opportunity</p>
-                            <img src="img/CareerCenter/SuitCase.png" height="45px" alt="">
+
+                        <div class="widgets-shared" id="widget4">
+                            <div id="Add-Job-btn" class="widget-right-side">
+                                <p>Add Internship opportunity</p>
+                                <img src="img/CareerCenter/SuitCase.png" height="45px" alt="">
+                            </div>
+                            <form class="Add-User-Form-invisible" id="Add-User-Form">
+                                <div class="Two-Inputs-line">
+                                    <div>
+                                        <label for="">Full Name</label>
+                                        <input type="text">
+                                    </div>
+
+                                    <div>
+                                        <label for="">Role</label>
+                                        <select name="" id="">
+                                            <option value="" disabled selected>sdasd</option>
+                                        </select>
+                                        <label for="">Role</label>
+                                        <select name="" id="">
+                                            <option value="" disabled selected>sdasd</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                
+                                <div>
+                                    <label for="">password</label>
+                                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                                   
+                                </div>
+                                
+                                <button>Confirm</button>
+                            </form>
                         </div>
                     </div>
                 </section>
@@ -252,6 +378,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="app.js"></script>
     <script src="new.js"></script>
+    <script src="CareerCenter.js"></script>
     <script src="DataTable.js"></script>
     <script src="Hover.js"></script>
 </body>

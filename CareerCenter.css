@@ -1,9 +1,11 @@
 .nav-bar {
-
   justify-content: flex-end !important;
 }
 
 
+.DataTable {
+  margin: 1.5rem 0rem 0rem 0rem;
+}
 
 .CareerCenter-Content {
   display: flex;
@@ -14,8 +16,7 @@
 
 .both-sides {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  transition: width 0.5s ease;
 }
 
 .widgets-shared {
@@ -24,7 +25,6 @@
   border-radius: 27px;
 
 }
-
 .nav-bar {
   justify-content: flex-end !important;
 }
@@ -33,7 +33,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-
   justify-content: space-between;
 }
 
@@ -42,21 +41,18 @@
   align-items: center;
 }
 
-.right-section-widgets {
-  display: flex;
-  transition: width 0.5s ease;
-}
-
-
-
-
-
 .widget-left-side p,
 .widget-right-side p {
   color: #585858;
   font-size: 20px;
   font-family: inter;
   font-weight: 600;
+}
+
+.left-section{
+  transition: width 0.5s ease;
+  width: 100%;
+  
 }
 
 .widget-left-side img {
@@ -70,8 +66,6 @@
 .widget-left-side:hover .hover-image {
   transform: scale(1.1) translate(-3.5%, -3.7%);
 }
-
-
 
 .widget-left-side {
   flex-direction: column;
@@ -90,26 +84,6 @@
 
 }
 
-.DataTable {
-  margin: 1.5rem 0rem 0rem 0rem;
-}
-
-.widget-right-side {
-  padding: 1.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.widget-right-side img {
-  margin: 0px 10px 0px 0px
-}
-
-.right-section-widgets {
-  width: 70%;
-  justify-content: space-between;
-}
-
 .check-all-btn button {
   background-color: transparent;
   border: none;
@@ -119,46 +93,93 @@
 
 }
 
+
 .widget-right-side p {
   width: 60%;
 }
 
+.widget-right-side img {
+  margin: 0px 10px 0px 0px
+}
+
+.widget-right-side {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 .right-section-widgets {
   display: flex;
   transition: width 0.5s ease;
+  flex-direction: column;
   /* Add overflow property to hide content when width is 0 */
+}
+.right-section-widgets {
+  width: 70%;
+  justify-content: space-between;
 }
 
 
 .collapse {
-  width: 0;
+  width: 0 !important;
+}
+
+.collapseVertical {
+  height: 0 !important;
 }
 
 #searchInput {
   display: none;
 }
 
-#back-left{
+
+
+.back-left-btn {
   position: absolute;
   padding: 0.5rem;
   font-size: 18px;
-  top: 15%;
-}
-
-.back-left-btn {
+  top: 12%;
   color: #fff !important;
   border: none !important;
   background-color: #FFD504 !important;
   border-radius: 21px;
   cursor: pointer;
   
-  
+
 }
-#Add-User-Form {
+
+.Add-User-Form-invisible{
+  display: none;
+}
+
+.Add-User-Form-invisible input{
+  box-sizing: border-box;
+    border: solid #FFD504 2px;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+#generateBtn{
+  background-color: #FFD504;
+  border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.Add-User-Form {
   display: flex;
   flex-wrap: wrap;
+  padding: 2rem 2rem 6rem 2rem;
+  
   gap: 10px;
+ 
+  
 }
+
+
 
 .Two-Inputs-line {
   display: flex;
@@ -178,21 +199,19 @@
   flex: 1;
 }
 
-#Add-User-Form > div {
+.Add-User-Form > div {
   flex: 1 1 100%; /* Flexbox 1:1:100% to stretch to available space */
   margin-top: 10px;
 }
 
-#Add-User-Form > div label {
+.Add-User-Form > div label {
   display: block;
   margin-bottom: 5px;
 }
 
-#Add-User-Form > div select {
-  width: 100%;
-}
 
-#Add-User-Form button {
+
+.Add-User-Form button {
   margin-top: 10px;
   align-self: flex-end;
 }
