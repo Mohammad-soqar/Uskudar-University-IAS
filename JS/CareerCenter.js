@@ -56,5 +56,5 @@ $('#copyBtn').on('click', function() {
   var passwordField = document.getElementById('passwordField');
   passwordField.select();
   document.execCommand('copy');
-  $('#copyBtn').append('<img src="img/Account.png" height="15px">')
+  $('#copyBtn').append('<img src="img/.png" height="15px">')
 });
