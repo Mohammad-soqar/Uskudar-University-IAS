@@ -1,0 +1,13 @@
+.Account-Content{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 21px;
+    padding: 2rem;
+    display: flex;
+}
+
+.Account-Links{
+    display: flex;
+    flex-direction: column;
+    color: ;
+}
