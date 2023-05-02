@@ -1,0 +1,70 @@
+.right-section{
+    background-color: #FFF8D4;
+}
+
+.Account-Content{
+    margin: 4rem 0 0 0;
+}
+#backButton {
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+    color: #fff !important;
+    border: none !important;
+    background-color: #FFD504 !important;
+    border-radius: 21px;
+    cursor: pointer;
+    margin: 1rem
+}
+
+.OfficialLetterRequest {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem 2rem 4rem 2rem;
+    background-color: #ffffff;
+    border-radius: 27px;
+    box-shadow: 2px 2px 30px 2px #00000015;
+}
+.OfficialLetterRequest h2{
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 1rem 0 2rem 0 ;
+}
+.Two-Inputs-line{
+    display: flex;
+    width: 100%;
+}
+.Two-Inputs-line div{
+    width: 50%;
+    margin: 1rem;
+}
+.inputs label {
+    display: block;
+    margin: 0 0 .5rem 0 ;
+}
+
+.inputs input,
+.inputs select{
+    box-sizing: border-box;
+    border: solid #FFD504 2px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 80%;
+}
+option{
+    background-color: #FFF8D4;
+}
+.sendButton{
+    text-align: end;
+}
+.sendButton button{
+    margin: 3rem 3rem 0 0;
+    padding: .5rem 3rem;
+    border: none;
+    border-radius: 27px;
+    background-color: #FFD504;
+    font-size: 18px;
+    color: #fff !important;
+    cursor: pointer;
+}
