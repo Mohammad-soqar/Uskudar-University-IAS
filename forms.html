@@ -1,50 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Forms</title>
-    <link rel="stylesheet" href="/Users/muntadher/Desktop/AA_team/css/master.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Account</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css\forms.css">
+
 </head>
 
 <body>
-    <div class="main">
-        
-        <div class="file1">
-            <h3 class="tilte">#File 1</h3>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum iste accusantium provident aliquam rem saepe, maxime numquam. Tempore ad inventore et vel quasi quibusdam, quisquam quis nesciunt assumenda corrupti?</p>
-            <p class="deadline">Deadline : 31/09/2023</p>
-            <div>
-                 <a href="#">
-                    <img src="/Users/muntadher/Desktop/AA_team/imgs/question-mark-circled.svg" alt="">
-                 </a>
-                <a class="link" href="#">Start</a>
-            </div>
-        </div>
 
-        <div class="file2">
-            <h3 class="tilte">#File 2</h3>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum iste accusantium provident aliquam rem saepe, maxime numquam. Tempore ad inventore et vel quasi quibusdam, quisquam quis nesciunt assumenda corrupti?</p>
-            <p class="deadline">Deadline : 31/09/2023</p>
-            <div>
-                <a href="#">
-                    <img src="/Users/muntadher/Desktop/AA_team/imgs/question-mark-circled.svg" alt="">
-                 </a>
-            <a class="link" href="#">Start</a>
+    <main class="container">
+        <section class="side-bar">
+            <div class="logo">
+                <a href="">
+                    <img src="img\logo.png" alt="" height="120rem">
+                </a>
             </div>
-        </div>
+            <div class="icons">
+                <div class="home">
+                    <a href="">
+                        <img src="img\home-symbol.png" alt="" height="27px">
+                        <p>Home</p>
+                    </a>
+                </div>
+                <!-- ----------Messages Dropdown Menu---------- -->
 
-        <div class="file3">
-            <h3 class="tilte">#File 3</h3>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum iste accusantium provident aliquam rem saepe, maxime numquam. Tempore ad inventore et vel quasi quibusdam, quisquam quis nesciunt assumenda corrupti?</p>
-            <p class="deadline">Deadline : 31/09/2023</p>
-            <div>
-                <a href="#">
-                    <img src="/Users/muntadher/Desktop/AA_team/imgs/question-mark-circled.svg" alt="">
-                 </a>
-            <a class="link" href="#">Download</a>
+                <div class="Messages">
+                    <div id="dropdown-messages-student">
+                        <img src="img\messages-symbol.png" alt="" width="27px " height="22px">
+                        <p> Messages <img id="down-arrow-home-student" src="img\Dowm-arrow.png" alt="" height="10px">
+                        </p>
+                    </div>
+
+                    <ul class="Messagesslide">
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Compose Message</a></li>
+                    </ul>
+                </div>
+
+                <!-- ----------Messages Dropdown Menu---------- -->
+                <div class="internship">
+                    <a href="">
+                        <img src="img\internship-symbol.png" alt="" height="22px">
+                        <p>Internship</p>
+                    </a>
+                </div>
+                <div class="forms">
+                    <a href="">
+                        <img src="img\forms-symbol.png" alt="" height="27px">
+                        <p>Forms</p>
+                    </a>
+                </div>
+                <div class="guide"><a href="">
+                        <img src="img\guide-symbol.png" alt="" height="23px">
+                        <p>Guide</p>
+                    </a>
+                </div>
+                <div class="logout-support">
+                    <div class="logout">
+                        <a href="Login.html">
+                            <img src="img\logout-symbol.png" alt="" height="27px">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                    <div class="support">
+                        <a href="Support.html">
+                            <img src="img\support-symbol.png" alt="">
+                            <p>Support</p>
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
-        </div>
 
-    </div>
+
+        </section>
+        <!-- ----------side menu bar---------- -->
+        <div class="right-section">
+            <div class="contents">
+
+                <section class="nav-bar">
+                    <div>
+                        <h3>Status</h3>
+                        <div class="status">
+                            <div class="progress-bar">
+                                <div class="progress-circle"></div>
+                                <div class="progress-line"></div>
+                                <div class="progress-circle"></div>
+                                <div class="progress-line"></div>
+                                <div class="progress-circle"></div>
+                                <div class="progress-line"></div>
+                                <div class="progress-circle"></div>
+                            </div>
+
+                            <button class="status-info" id="startButton"><img src="img/support-symbol.png"
+                                    alt=""></button>
+                        </div>
+                    </div>
+
+
+                    <div class="call-to-action-btns">
+                        <a href=""><img src="img/messages.png" alt="" height="32px"></a>
+                        <a href=""><img src="img/Notification.png" alt="" height="35px"></a>
+                        <a class="Account" href="Account.html">
+                            <img src="img/Account.png" alt="" height="60px">
+                            <div class="Account-Text">
+                                <p>John Doe</p>
+                                <p>200209476</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+
+                <section class="Account-Content">
+
+                    <div class="file1">
+                        <h3 class="title">#File 1</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum iste
+                            accusantium provident aliquam rem saepe, maxime numquam. Tempore ad inventore et vel quasi
+                            quibusdam, quisquam quis nesciunt assumenda corrupti?</p>
+                        <p class="deadline">Deadline : 31/09/2023</p>
+                        <div class="FilesLinks">
+                            <a href="#">
+                                <img src="img\support-symbol.png" alt="">
+                            </a>
+                            <a id="LinkStartButton" href="#">Start</a>
+                        </div>
+                    </div>
+
+                    <div class="file2">
+                        <h3 class="title">#File 2</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum iste
+                            accusantium provident aliquam rem saepe, maxime numquam. Tempore ad inventore et vel quasi
+                            quibusdam, quisquam quis nesciunt assumenda corrupti?</p>
+                        <p class="deadline">Deadline : 31/09/2023</p>
+                        <div class="FilesLinks">
+                            <a href="#">
+                                <img src="img\support-symbol.png" alt="">
+                            </a>
+                            <a id="LinkStartButton" href="#">Start</a>
+                        </div>
+                    </div>
+
+                    <div class="file3">
+                        <h3 class="title">#File 3</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum iste
+                            accusantium provident aliquam rem saepe, maxime numquam. Tempore ad inventore et vel quasi
+                            quibusdam, quisquam quis nesciunt assumenda corrupti?</p>
+                        <p class="deadline">Deadline : 31/09/2023</p>
+                        <div class="FilesLinks">
+                            <a href="#">
+                                <img src="img\support-symbol.png" alt="">
+                            </a>
+                            <a id="LinkStartButton" href="#">Download</a>
+                        </div>
+                    </div>
+
+                </section>
+
+
+            </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="JS/app.js"></script>
 </body>
+
 </html>

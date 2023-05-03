@@ -1,8 +1,4 @@
-body{
-    background-color: rgb(255, 251, 206);
-}
-
-.tilte{
+/* .tilte{
     font-size: 31.85px;
 }
 .text,
@@ -79,4 +75,51 @@ font-style: normal;
 font-weight: 500;
 font-size: 26.85px;
 line-height: 45px;
+}
+ */
+
+ .Account-Content{
+    display: flex;
+    margin: 6rem 0 0 0;
+ }
+ .file1,
+ .file2,
+ .file3{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 27px;
+    padding: 1rem;
+    margin: 0 1rem ;
+    box-shadow: 2px 2px 30px 2px #00000015;
+ }
+ .title{
+    margin: 2rem  0 2rem 1rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+ }
+.text{
+    margin: 0 1rem 1rem 1rem;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.deadline{
+    margin: 0 0 1rem 1rem;
+    font-weight: 700;
+}
+.FilesLinks{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    align-items: center;
+}
+#LinkStartButton{
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+    color: #fff !important;
+    border: none !important;
+    background-color: #FFD504 !important;
+    border-radius: 21px;
+    cursor: pointer;
+    margin: 1rem 1rem 0 1rem;
 }
