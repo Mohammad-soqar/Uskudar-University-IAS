@@ -1,3 +1,6 @@
+.support p{
+    color: #FFD504 !important;
+}
 .questionBackground{
     background-image: url(../img/have-a-Quastion-Backgroind.png);
     background-repeat: no-repeat;
@@ -7,6 +10,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 21px;
+    margin: 2rem 0 0 0;
 }
 .question{
     margin: 5.5rem 0 0 0;

@@ -1,4 +1,6 @@
-
+.forms p{
+    color: #FFD504 !important;
+}
 
 .Account-Content{
     margin: 4rem 0 0 0;
@@ -11,7 +13,6 @@
     background-color: #FFD504 !important;
     border-radius: 21px;
     cursor: pointer;
-    margin: 1rem
 }
 
 .OfficialLetterRequest {
@@ -22,6 +23,7 @@
     background-color: #ffffff;
     border-radius: 27px;
     box-shadow: 2px 2px 30px 2px #00000015;
+    margin: 2rem 0 0 0;
 }
 .OfficialLetterRequest h2{
     display: block;
