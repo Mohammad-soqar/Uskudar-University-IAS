@@ -3,9 +3,13 @@
 <html>
 
 <head>
+  <link rel="icon" href="img/webIcon.png">
+  
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Career Center</title>
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Css/CareerCenter.css">
@@ -44,25 +48,14 @@
                         <li><a href="#">Compose Message</a></li>
                     </ul>
                 </div>
-
-                <!-- ----------Messages Dropdown Menu---------- -->
                 <div class="internship">
                     <a href="">
                         <img src="img\internship-symbol.png" alt="" height="22px">
                         <p>Internship</p>
                     </a>
                 </div>
-                <div class="forms">
-                    <a href="">
-                        <img src="img\forms-symbol.png" alt="" height="27px">
-                        <p>Forms</p>
-                    </a>
-                </div>
-                <div class="guide"><a href="">
-                        <img src="img\guide-symbol.png" alt="" height="23px">
-                        <p>Guide</p>
-                    </a>
-                </div>
+                <!-- ----------Messages Dropdown Menu---------- -->
+                
                 <div class="logout-support">
                     <div class="logout">
                         <a href="Login.html">
@@ -71,7 +64,7 @@
                         </a>
                     </div>
                     <div class="support">
-                        <a href="Support.html">
+                        <a href="Support copy.html">
                             <img src="img\support-symbol.png" alt="">
                             <p>Support</p>
                         </a>
@@ -104,7 +97,7 @@
                     </div>
                 </section>
                 <div id="back-buttons"></div>
-               
+
                 <section class="CareerCenter-Content">
 
                     <div class="left-section both-sides">
@@ -156,6 +149,7 @@
                                             <td class="center"><img src="img/CareerCenter/Upload.png" alt="Upload"
                                                     class="upload-icon"></td>
                                         </tr>
+                                    
                                         <tr>
                                             <td>Ryan Reynolds</td>
                                             <td>200111112</td>
@@ -183,6 +177,7 @@
                                             <td class="center"><img src="img/CareerCenter/Upload.png" alt="Upload"
                                                     class="upload-icon"></td>
                                         </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -209,20 +204,28 @@
                                     </div>
 
                                 </div>
-                                <div>
-                                    <label for="">password</label>
-                                    <input type="text" id="passwordField">
-                                    <button type="button" id="generateBtn">Generate</button>
-                                    <button type="button" id="copyBtn">Copy</button>
-                            
+                                <div class="Two-Inputs-line">
+                                    <div>
+                                        <label for="">password</label>
+                                        <input type="text" id="passwordField">
+                                        <button class="password-btn" type="button" id="generateBtn">Generate</button>
+                                        <button class="password-btn copyBtn" type="button" id="copyBtn">Copy</button>
+    
+                                    </div>
+                                   
+                                    <div>
+                                        <label for="">Role</label>
+                                        <select name="" id="">
+                                            <option value="" disabled selected>Select Role</option>
+                                            <option value="" >Internship Coordinator</option>
+                                            <option value="" >Career Center</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label for="">Role</label>
-                                    <select name="" id="">
-                                        <option value="" disabled selected>sdasd</option>
-                                    </select>
+                                <div class="sendButton Add">
+                                    <button>Confirm</button>
                                 </div>
-                                <button>Confirm</button>
+                                
                             </form>
                         </div>
 
@@ -232,7 +235,7 @@
                                 <p>Old Health Insurance</p>
                                 <img src="img/CareerCenter/HealthInsurance.png" height="45px" alt="">
                             </div>
-                            
+
 
                             <div id="datatable" class="DataTable Add-User-Form-invisible">
 
@@ -324,9 +327,9 @@
                                 <div>
                                     <label for="">password</label>
                                     <textarea name="" id="" cols="30" rows="5"></textarea>
-                                   
+
                                 </div>
-                              
+
                                 <button>Confirm</button>
                             </form>
                         </div>
@@ -336,52 +339,88 @@
                                 <p>Add Internship opportunity</p>
                                 <img src="img/CareerCenter/SuitCase.png" height="45px" alt="">
                             </div>
-                            <form class="Add-User-Form-invisible" id="Add-User-Form">
+                            <div class="Add-User-Form-invisible" id="Add-User-Form">
                                 <div class="inputs">
 
-                                    <div class="Two-Inputs-line">
-                                        <div>
-                                            <label for="">Company Name</label>
-                                            <input type="text" placeholder="Company Name" >
+                                    <div id="first-slide">
+                                        <div class="Two-Inputs-line">
+                                            <div>
+                                                <label for="">Job title</label>
+                                                <input type="text" placeholder="Job title">
+                                            </div>
+                                            <div>
+                                                <label for="">Company Name</label>
+                                                <input type="text" placeholder="Company Name">
+                                            </div>
+
+                                            <div>
+                                                <label for="">Location</label>
+                                                <select name="" id="">
+                                                    <option value="" disabled selected>Choose location</option>
+                                                    <option value="">Istanbul</option>
+                                                    <option value="">Ankara</option>
+                                                </select>
+                                            </div>
+    
                                         </div>
-                                        <div>
-                                            <label for="">Company Name</label>
-                                            <input type="text" placeholder="Company Name" >
+    
+    
+                                        <div class="Two-Inputs-line">
+    
+                                            <div>
+                                                <label for="">Job Type</label>
+                                                <select name="" id="">
+                                                    <option value="" disabled selected>Choose type</option>
+                                                    <option value="">Part-Time</option>
+                                                    <option value="">Full-Time</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="">On-site/Remote</label>
+                                                <select name="" id="">
+                                                    <option value="" disabled selected>Choose On-site or Remote</option>
+                                                    <option value="">On-site</option>
+                                                    <option value="">Remote</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <label for="">Company Email</label>
-                                            <input type="text" placeholder="Company Email">
-                                        </div>
-        
                                     </div>
-        
-        
-                                    <div class="Two-Inputs-line">
-                                        <div>
-                                            <label for="">Reciver Name</label>
-                                            <input type="text" placeholder="Reciver Name">
+                                   
+
+                                    <div id="second-slide">
+                                        <div class="Two-Inputs-line">
+                                            <div>
+                                                <label for="">Company Name</label>
+                                                <input type="text" placeholder="Company Name">
+                                            </div>
+                                            <div>
+                                                <label for="">Company Name</label>
+                                                <input type="text" placeholder="Company Name">
+                                            </div>
+    
+    
                                         </div>
-                                        <div>
-                                            <label for="">Department</label>
-                                            <select name="" id="">
-                                                <option value=""  selected>Software Engineering Department ( English )</option>
-                                                <option value="" >sdasd</option>
-                                                <option value="" >sdasd</option>
-                                            </select>
+                                        <div class="Two-Inputs-line nomargin">
+                                            <div>
+                                                <label for="">Company Email</label>
+                                                <textarea type="file" placeholder="Company Email"></textarea>
+                                            </div>
                                         </div>
+                                        
                                     </div>
-                                    <!--  <div>
-                                        <label for="">Role</label>
-                                        <select name="" id="">
-                                            <option value="" disabled selected>sdasd</option>
-                                        </select>
-                                    </div> -->
+                                    
+
                                 </div>
-                                
-                                    <div class="sendButton">
-                            <button>Send</button>
-                        </div>
-                            </form>
+
+
+                                <div class="sendButton">
+                                    <div class="backButton">
+
+                                    </div>
+
+                                    <button id="next-btn" class="post-btn"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

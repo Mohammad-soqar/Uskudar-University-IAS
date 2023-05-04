@@ -1,6 +1,7 @@
 .Two-Inputs-line{
     display: flex;
     width: 100%;
+    align-items: flex-end;
 }
 .Two-Inputs-line div{
     width: 50%;
@@ -12,7 +13,7 @@
 }
 
 .inputs input,
-.inputs select{
+ select{
     box-sizing: border-box;
     border: solid #FFD504 2px;
     border-radius: 10px;
@@ -22,6 +23,11 @@
 option{
     background-color: #FFF8D4;
 }
+
+.Add{
+    justify-content: flex-end !important;
+}
+
 .sendButton{
     text-align: end;
 }
