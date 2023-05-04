@@ -12,11 +12,11 @@ function getRandomChar(charString) {
 function generatePassword() {
   var passwordLength = 12; // Change this to set desired password length
   var password = '';
-  
+
   // Loop to generate password characters
   for (var i = 0; i < passwordLength; i++) {
     var charSet = '';
-    
+
     // Ensure at least one character from each character set
     if (i === 0) {
       charSet = uppercaseChars;
@@ -37,24 +37,58 @@ function generatePassword() {
         charSet = numericChars;
       }
     }
-    
+
     // Append a random character from the selected character set
     password += getRandomChar(charSet);
   }
-  
+
   return password;
 }
 
 // Bind click event to generate password button
-$('#generateBtn').on('click', function() {
+$('#generateBtn').on('click', function () {
   var password = generatePassword();
   $('#passwordField').val(password);
 });
 
 // Bind click event to copy button
-$('#copyBtn').on('click', function() {
+$('#copyBtn').on('click', function () {
   var passwordField = document.getElementById('passwordField');
   passwordField.select();
   document.execCommand('copy');
-  $('#copyBtn').append('<img src="img/.png" height="15px">')
+  /* $('#copyBtn').append('<img src="img/.png" height="15px">') */
 });
+
+
+$(document).ready(function () {
+  var backLeftBtn = $('<button id="backButton">Back</button>');
+  $('#next-btn').text('Next');
+
+  $('#second-slide').hide();
+
+  $('#next-btn').on('click', function () {
+
+    $('#first-slide').fadeOut(200, function() {
+      $('.backButton').append(backLeftBtn);
+      $('#second-slide').fadeIn(200);
+      $('#next-btn').text('Post');
+    });
+
+
+  });
+
+
+  $('.backButton').on('click', function () {
+
+
+
+    $('#second-slide').fadeOut(200, function() {
+    backLeftBtn.remove();
+    $('#next-btn').text('Next');
+
+      $('#first-slide').fadeIn(200);
+    });
+
+  });
+});
+

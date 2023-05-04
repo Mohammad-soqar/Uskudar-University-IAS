@@ -2,7 +2,6 @@
   justify-content: flex-end !important;
 }
 
-
 .DataTable {
   margin: 1.5rem 0rem 0rem 0rem;
 }
@@ -162,11 +161,27 @@
     padding: 10px 15px;
 }
 
-#generateBtn{
+.nomargin{
+  margin: 0rem 1rem 0rem 1rem !important;
+}
+textarea {
+  resize: none;
+  height: 63px;
+}
+.password-btn{
+  color: #fff;
   background-color: #FFD504;
   border: none;
     padding: 10px 15px;
     border-radius: 10px;
+    cursor: pointer;
+  border: 3px solid #FFD504;
+
+}
+
+.copyBtn{
+  color: #FFD504;
+  background-color: transparent;
 }
 
 .Add-User-Form {
@@ -179,6 +194,10 @@
   
 }
 
+.sendButton{
+  display: flex;
+  justify-content: space-between;
+}
 
 
 .Two-Inputs-line {
