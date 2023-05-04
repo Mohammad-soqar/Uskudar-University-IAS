@@ -4,10 +4,81 @@
     border-radius: 21px;
     padding: 2rem;
     display: flex;
+    margin: 2rem 0 0 0;
 }
-
+#line{
+    width: 2px;
+    background-color: #F4F4F4;
+}
 .Account-Links{
     display: flex;
     flex-direction: column;
-    color: ;
+    width: 20%;
+}
+.Account-Links li{
+    margin: 2rem 0;
+}
+.Account-Links a{
+    padding: 1rem 0 ;
+}
+.right-side-panel{
+    padding: 0rem 2rem;
+    width: 100%;
+}
+.MyProfile{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.MyProfile h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.PersonalInforamtion{
+    background-color: #F4F4F4;
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    border-radius: 17px;
+}
+.PersonalInforamtion-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 1rem 0;
+}
+.PersonalInforamtion-button button{
+    background-color: #FFD504;
+    border: none;
+    border-radius: 27px;
+    color: #F4F4F4;
+    width: 6rem;
+    padding: .5rem 0 ;
+    text-align: center;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.PersonalInforamtion-button{
+    font-size: 1.5rem;
+}
+.EmailAddress2 p,
+.PhoneNumber p{
+    margin: .5rem 0 1rem 0;
+}
+.AddressDistrict{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    width: 70%;
+}
+.AddressDistrict p{
+    margin: 1rem 0 0 0;
+}
+.AddressDiv{
+    background-color: #F4F4F4;
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    border-radius: 17px;
 }
