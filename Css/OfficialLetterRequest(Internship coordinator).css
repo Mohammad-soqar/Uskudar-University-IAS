@@ -1,0 +1,33 @@
+.forms p{
+    color: #FFD504 !important;
+}
+
+.Account-Content{
+    margin: 4rem 0 0 0;
+}
+#backButton {
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+    color: #fff !important;
+    border: none !important;
+    background-color: #FFD504 !important;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+.OfficialLetterRequest {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem 2rem 4rem 2rem;
+    background-color: #ffffff;
+    border-radius: 27px;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    margin: 2rem 0 0 0;
+}
+.OfficialLetterRequest h2{
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 1rem 0 2rem 0 ;
+}
