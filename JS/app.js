@@ -472,6 +472,17 @@ $(document).ready(function () {
   });
 });
 
-
+$(document).ready(function() {
+  $('#search-input').keyup(function() {
+    const searchQuery = $(this).val().toLowerCase();
+    
+    $('#list li').each(function() {
+      const text = $(this).text().toLowerCase();
+      const match = text.indexOf(searchQuery) !== -1;
+      
+      $(this).toggle(match);
+    });
+  });
+});
 
 

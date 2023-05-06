@@ -1,0 +1,91 @@
+.Internships{
+    margin: 3rem 0rem 0rem 0rem;
+}
+
+.Filter-Internship{
+    display: flex;
+}
+
+.Filter-Internship div{
+    margin: 0rem 1rem;
+   
+    border: 3px solid #585858;
+    border-radius: 10px;
+}
+
+.Filter-Internship select, .Filter-Internship input{
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    padding: 0.5rem;
+}
+
+.Filter-Internship select{
+    width: 8rem;
+}
+
+.Filter-Internship option{
+    font-size: 12px;
+    padding: 1rem;
+}
+
+.Filter-Internship option:focus{
+    background-color: #FFD504 !important;
+}
+
+.Filter-Internship input:focus ,.Filter-Internship select{
+    background-color: transparent;
+    outline: none;
+}
+
+.Search-Input{
+    display: flex;
+    align-items: center;
+}
+
+.Search-Input img{
+    padding: 0.5rem;
+}
+
+.Internship-Container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+.Left-Internship-Links{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    overflow-y: scroll;
+    max-height: calc(100vh - 12rem);
+    flex: 1;
+    overflow-y: auto;
+    background-color: #fff;
+
+
+}
+
+.location-img, .Title-img{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0rem;
+
+}
+
+.text-img{
+    margin-left: 1rem;
+}
+
+.Internship-Link{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.Internship-Details{
+    width: 70%;
+    background-color: #fff;
+}
+

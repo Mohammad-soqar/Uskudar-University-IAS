@@ -118,6 +118,8 @@ button:focus {
 
 body {
     line-height: 1;
+    height: 100vh; 
+    overflow: hidden; /* Hide any overflow */
 }
 
 ol,
