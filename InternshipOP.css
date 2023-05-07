@@ -52,17 +52,27 @@
     width: 100%;
     height: 100%;
     margin: 2rem 0rem 0rem 0rem;
+    background-color: #fff;
+
+}
+
+hr{
+    width: 99%;
+    color: #585858;
+    height: 1px;
 }
 
 .Left-Internship-Links{
     display: flex;
+    overflow-x: none !important ;
+    padding: 1rem 0rem 0rem 0rem;
     flex-direction: column;
     width: 30%;
     overflow-y: scroll;
-    max-height: calc(100vh - 12rem);
+    max-height: calc(100vh - 13rem);
     flex: 1;
+    margin: 0rem 0rem 2rem 0rem;
     overflow-y: auto;
-    background-color: #fff;
 
 
 }
@@ -70,7 +80,7 @@
 .location-img, .Title-img{
     display: flex;
     align-items: center;
-    margin: 0.5rem 0rem;
+    margin: 0.5rem 0rem 0.5rem 1rem;
 
 }
 
@@ -86,6 +96,84 @@
 
 .Internship-Details{
     width: 70%;
+    overflow-y: scroll;
+    max-height: calc(100vh - 12rem);
     background-color: #fff;
 }
 
+.Internship-Details-Margin{
+    margin: 2rem 3rem;
+
+}
+
+.Title-Details h3{
+    font-size: 28pt;
+    font-weight: 700;
+    color: #585858;
+}
+
+.Title-Details p{
+    margin: 1rem 0rem 0rem 0rem;
+    color: #585858;
+
+}
+
+.call-to-action-btn {
+    display: flex;
+}
+
+.call-to-action-btn a, .call-to-action-btn button{
+    padding: 0.7rem 2rem;
+    border-radius: 27px;
+    font-size: 12pt;
+    border: none;
+    margin: 0rem 0rem 1rem 0rem;
+    font-weight: 500;
+}
+
+.call-to-action-btn a{
+    color: #fff !important;
+    background-color: #FFD504;
+}
+
+.call-to-action-btn button{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem ;
+    color: #585858;
+    background-color: #e3e3e3;
+}
+
+.call-to-action-btn button p{
+    margin-right: 0.5rem;
+}
+
+.job-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.Filters{
+    display: flex;
+    margin: 1.5rem 0rem;
+    align-items: center;
+}
+
+.Filters p{
+    margin-left: 1rem;
+}
+
+.Type-Skills{
+    margin: 1rem 0rem;
+}
+
+.About-job{
+    margin: 1.5rem 0rem 0rem 0rem;
+}
+
+.About-job h4{
+    margin: 0rem 0rem 1rem 0rem;
+    font-size: 20pt;
+    color: #585858;
+    font-weight: 600;
+}
