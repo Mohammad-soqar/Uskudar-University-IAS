@@ -31,7 +31,7 @@ option{
 .sendButton{
     text-align: end;
 }
-.sendButton button{
+.sendButton button ,#next-btn, .backButton div{
     margin: 3rem 3rem 0 0;
     padding: .5rem 3rem;
     border: none;
