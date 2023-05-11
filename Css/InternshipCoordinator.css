@@ -1,0 +1,517 @@
+@font-face {
+    src: url(font/Inter-VariableFont_slnt,wght.ttf);
+    font-family: inter;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+p {
+    color: #585858 !important;
+}
+h1 {
+    color: #FFD504;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+    background-color: #dadada !important;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.logo {
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.icons {
+    width: 80%;
+    margin: 0 2rem 0 2rem;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.side-bar {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.home a,
+.internship a,
+.forms a,
+.guide a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.home h1 {
+    color: #FFD504;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 0 1rem;
+}
+
+
+.internship p,
+.forms p,
+.guide p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #585858;
+    margin: 0 0 0 1rem;
+}
+.home,
+.Messages,
+.internship,
+.forms,
+.guide{
+    margin: 0rem 0rem 2rem 0rem ;
+
+}
+
+
+/*----------Messages Dropdown Menu----------*/
+
+.Messages {
+    width: 100%;
+    border-radius: 27px;
+}
+
+.Messages p {
+    margin: 0 3rem 0 1rem;
+    color: #585858;
+}
+
+.MessagesHead {
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 27px;
+}
+
+.MessagesHead::after {
+    float: inline-start;
+    right: 10%;
+    content: "\221F";
+    transform: rotate(-45deg);
+}
+
+.Messagesslide {
+    clear: both;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+.Messagesslide a {
+    text-decoration: none;
+}
+
+.Messagesslide li {
+    list-style-type: none;
+}
+
+.Messagesslide li {
+    padding: 3px;
+}
+
+#Messagestouch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#Messagestouch:checked+.Messagesslide {
+    height: 100px;
+}
+
+.Messagesslide li {padding : 3px;}
+      
+#Messagestouch {position: absolute; opacity: 0; height: 0px;}    
+      
+#Messagestouch:checked + .Messagesslide {height: 65px;} 
+
+
+/*----------Messages Dropdown menu----------*/
+.logout-support-hr {
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+}
+
+.logout {
+    margin: 1rem 0 0 0;
+}
+
+.logout a,
+.support a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logout p,
+.support p {
+    margin: 0 0 0 1rem;
+}
+
+/*----------side menu bar---------- */
+
+
+
+/* navbar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 1150px;
+}
+
+
+.Account {
+    display: flex;
+    align-items: center;
+}
+
+.Account-Text {
+    font-family: inter;
+    color: #585858;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.Account-Text p {
+    margin: 0.5rem 0rem;
+}
+
+.call-to-action-btns {
+    display: flex;
+    align-items: center;
+}
+
+.call-to-action-btns a {
+    margin: 0rem 1rem;
+}
+
+/* navbar */
+
+/*------- Internship Coordinator Side------*/
+
+.afa 
+{   
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 27px;
+    
+}
+#afa, #let-req
+{
+    text-decoration: none;
+}
+#let1
+{
+    width: 80px;
+    height: 90px;
+    position: relative;
+    left: 20px;
+    top: -10px;
+}
+#let2
+{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 384px;
+    top: 80px;
+}
+.afa h3{
+    font-family: inter;
+    font-style: normal;
+    font-size: 25px;
+    color: #585858;
+    text-align: center;
+    position: relative;
+    top: -72px;
+    left: -20px;
+}
+.letter-req
+{   
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 27px;
+    
+}
+#mail1
+{
+    width: 80px;
+    height: 65px;
+    position: relative;
+    left: 20px;
+    top: -20px;
+}
+#mail2
+{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 380px;
+    top: 72px;
+}
+.afa h3:hover, .letter-req h3:hover
+{
+    color: #FFD504;
+}
+
+.letter-req h3 
+{
+    font-family: inter;
+    font-style: normal;
+    font-size: 25px;
+    color: #585858;
+    text-align: center;
+    position: relative;
+    top: -72px;
+    left: -85px;
+
+}
+.containerIntern
+{   
+    width: 490px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    left: 955px;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 27px;
+    
+}
+.containerIntern h3{
+    font-family: inter;
+    font-style: normal;
+    font-size: 25px;
+    color: #585858;
+    text-align: center;
+    position: relative;
+    top: 15px;
+
+}
+.announcement1-block, .announcement2-block, .announcement3-block
+{   
+    width: 400px;
+    height: 100px;
+    background-color: #FFD504;
+    position: absolute;
+    left: 50px;
+    border-radius: 27px;   
+}
+.announcement1-block:hover, .announcement2-block:hover, .announcement3-block:hover{
+    background-color: #fff8d4;
+}
+.announcement3-block{
+    top: 300px;
+} 
+.announcement2-block{
+    top: 180px;
+} 
+.announcement1-block{
+    top: 60px;
+}  
+ 
+#checkall{
+    list-style: none;
+    font-size: 20px;
+    font-family: inter;
+    color: #585858;
+    font-weight: 600;
+    position: relative;
+    left: 195px;
+    top: 390px;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.announcement1-block h2,  
+.announcement2-block h2, 
+.announcement3-block h2
+{
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: inter;
+    font-weight: 400;
+}
+.announcement1-block h5,
+.announcement2-block h5,
+.announcement3-block h5
+{
+    padding-left: 30px;
+
+}
+#ann1, #ann2, #ann3{
+    text-decoration: none;
+    color: #ffffff;
+}
+#ann1:hover, #ann2:hover, #ann3:hover
+{
+    color: #585858;
+}
+
