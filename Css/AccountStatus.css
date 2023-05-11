@@ -1,0 +1,119 @@
+.Account-Content {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 21px;
+    padding: 2rem;
+    display: flex;
+    margin: 2rem 0 0 0;
+}
+
+.formsAndForms {
+    margin: 2rem 0 0 0;
+    padding: 1rem;
+    background-color: #F4F4F4;
+    border-radius: 27px;
+}
+
+#line {
+    width: 2px;
+    background-color: #F4F4F4;
+}
+
+
+
+.Account-Links {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.Account-Links a {
+    padding: 1rem 0 1rem 1rem;
+}
+
+#selected {
+    background-color: #FFD504;
+}
+
+.right-side-panel {
+    padding: 0rem 2rem;
+    width: 100%;
+}
+
+.MyProfile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MyProfile h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.AccountSettings p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.StatusNavBarContiner {
+    display: flex;
+    justify-content: center;
+}
+
+.StatusNavBar {
+    align-items: center;
+    width: fit-content;
+}
+
+.files {
+    display: flex;
+    padding: 1rem 0 1rem 0;
+}
+
+.file1,
+.file2,
+.file3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 27px;
+    padding: 1rem;
+    margin: 0 1rem;
+    box-shadow: 2px 2px 30px 2px #00000015;
+}
+
+.title {
+    margin: 1rem 0 2rem 0rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.text {
+    margin: 0 0rem 1rem 0rem;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+.deadline {
+    margin: 0 0 1rem 1rem;
+    font-weight: 700;
+}
+
+.FilesLinks {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    align-items: center;
+}
+
+#LinkStartButton {
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+    color: #fff !important;
+    border: none !important;
+    background-color: #FFD504 !important;
+    border-radius: 21px;
+    cursor: pointer;
+}

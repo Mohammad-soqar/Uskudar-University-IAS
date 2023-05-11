@@ -1,0 +1,87 @@
+.Account-Content {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 21px;
+    padding: 2rem;
+    display: flex;
+    margin: 2rem 0 0 0;
+}
+
+#line {
+    width: 2px;
+    background-color: #F4F4F4;
+}
+
+.Account-Links {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.Account-Links a {
+    padding: 1rem 0 1rem 1rem;
+}
+#selected{
+    background-color: #FFD504;
+}
+
+.right-side-panel {
+    padding: 0rem 2rem;
+    width: 100%;
+}
+
+.MyProfile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#AccountSettings{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.MyProfile h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.HealthInsuranceSetting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F4F4;
+    padding: 2rem;
+    border-radius: 27px;
+    margin: 2rem 0 0 0 ;
+}
+.provided img{
+    margin: 1rem 0 0 0;
+}
+.HeartbeatSymbolAndName{
+    display: flex;
+    align-items: center;
+    margin: 0  0 0 1rem;
+}
+.HeartbeatSymbolAndName img{
+    margin: 0 1rem 0 0 ;
+}
+.dates{
+    margin: 2rem 0 0 1rem;
+}
+.dates p{
+    margin: 0 0 1rem 0;
+}
+.provided{
+    margin: 2rem 0 0 1rem;
+}
+.HealthInsuranceSetting button{
+    padding: .5rem 2rem;
+    margin: 2rem 0 0 2rem;
+    border: none;
+    border-radius: 27px;
+    background-color: #FFD504;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+.PDFSymbolImg{
+    margin: 0 2rem 0 0;
+}
