@@ -1,3 +1,34 @@
+.back
+{ 
+    width: 150px;
+    height: 50px;
+    background-color: #ffd504;
+    position: absolute;
+    top: 80px;
+    left: 340px;
+    border-radius: 27px;
+}
+.back h4 
+{
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-family: inter;
+    font-size:larger;
+
+}
+.table-container
+{
+    width: 1100px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    left: 340px;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 27px;
+}
 .DataTable {
   width: 100%;
   background-color: #fff;
@@ -7,6 +38,8 @@ table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
+  position: absolute;
+  top: 100px;
 }
 
 thead {
@@ -41,10 +74,24 @@ td{
 .sort {
   margin-left: 5px;
 }
+.table-container h3
+{
+    font-family: inter;
+    font-style: normal;
+    font-size: 25px;
+    color: #585858;
+    position: absolute;
+    top: 40px;
+    left: 65px;
 
+}
 
 #searchInput {
   margin-bottom: 10px;
+  position: absolute;
+  left: 900px;
+  top: 40px;
+  border-radius: 5px;
 }
 
 .rotateImage img {
