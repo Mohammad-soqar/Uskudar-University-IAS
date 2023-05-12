@@ -326,7 +326,7 @@ $(document).ready(function () {
       rightSectionWidgets.css('overflow', 'visible');
     }, 200);
   });
- 
+
   $('#old-HealthI-btn').on('click', function () {
     var leftSection = $('.left-section');
     var rightSectionWidgets = $('.right-section-widgets');
@@ -472,14 +472,14 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function() {
-  $('#search-input').keyup(function() {
+$(document).ready(function () {
+  $('#search-input').keyup(function () {
     const searchQuery = $(this).val().toLowerCase();
-    
-    $('#list li').each(function() {
+
+    $('#list li').each(function () {
       const text = $(this).text().toLowerCase();
       const match = text.indexOf(searchQuery) !== -1;
-      
+
       $(this).toggle(match);
     });
   });
@@ -488,8 +488,8 @@ $(document).ready(function() {
 
 //account page for changing the paragraphe to text-box
 
-$(document).ready(function() {
-  $(".edit-button").click(function() {
+$(document).ready(function () {
+  $(".edit-button").click(function () {
     const email = $(".email");
     const phone = $(".phone");
     email.replaceWith('<input type="text" class="email" value="' + email.text() + '">');
@@ -497,7 +497,7 @@ $(document).ready(function() {
     $(".edit-button").css('display', 'none');
     $(".sendButton").css('display', 'block');
   });
-  $("#saveButton").click(function() {
+  $("#saveButton").click(function () {
     const emailInput = $(".email");
     const phoneInput = $(".phone");
     const newEmail = emailInput.val();
@@ -513,22 +513,63 @@ $(document).ready(function() {
 
 
 
-$(document).ready(function() {
-  $(".edit-button2").click(function() {
+$(document).ready(function () {
+  $(".edit-button2").click(function () {
     const district = $(".district");
     const city = $(".city");
     district.replaceWith('<input type="text" class="district" value="' + district.text() + '">');
     city.replaceWith('<input type="text" class="city" value="' + city.text() + '">');
-    $(".edit-button2").css('display','none');
-    $("#saveButton2").css('display','block');
+    $(".edit-button2").css('display', 'none');
+    $("#saveButton2").css('display', 'block');
   });
 
-  $("#saveButton2").click(function() {
+  $("#saveButton2").click(function () {
     const districtInput = $(".district");
     const cityInput = $(".city");
     districtInput.replaceWith('<p class="district">' + districtInput.val() + '</p>');
     cityInput.replaceWith('<p class="city">' + cityInput.val() + '</p>');
-    $(".edit-button2").css('display','block');
-    $("#saveButton2").css('display','none');
+    $(".edit-button2").css('display', 'block');
+    $("#saveButton2").css('display', 'none');
   });
 });
+
+
+//notification box on click
+
+$(document).click(function(e) {
+  var notificationContainer = $(".notificationContiner");
+  if (!notificationContainer.is(e.target) && notificationContainer.has(e.target).length === 0) {
+    notificationContainer.hide();
+  }
+});
+
+$("#NotificationButton").click(function (e) {
+  e.stopPropagation();
+  if($(".notificationContiner").css("display") === "none") {
+    $(".notificationContiner").show();
+  } else if ($(".notificationContiner").is(":visible")) {
+    $(".notificationContiner").hide();
+  }
+});
+
+
+// Messages box on click
+
+$(document).click(function(e) {
+  var notificationContainer = $(".messagingboxContiner");
+  if (!notificationContainer.is(e.target) && notificationContainer.has(e.target).length === 0) {
+    notificationContainer.hide();
+  }
+});
+
+$("#MessagesButton").click(function (e) {
+  e.stopPropagation();
+  if($(".messagingboxContiner").css("display") === "none") {
+    $(".messagingboxContiner").show();
+  } else if ($(".messagingboxContiner").is(":visible")) {
+    $(".messagingboxContiner").hide();
+  }
+});
+
+
+

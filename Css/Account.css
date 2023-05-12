@@ -21,9 +21,11 @@
 .Account-Links a {
     padding: 1rem 0 1rem 1rem;
 }
-#selected{
+
+#selected {
     background-color: #FFD504;
 }
+
 .right-side-panel {
     padding: 0rem 2rem;
     width: 100%;
@@ -40,10 +42,12 @@
     font-size: 2rem;
     font-weight: 600;
 }
-#AccountSettings{
+
+#AccountSettings {
     font-size: 2rem;
     font-weight: 600;
 }
+
 .PersonalInforamtion {
     background-color: #F4F4F4;
     margin: 1rem 0 0 0;
@@ -119,13 +123,16 @@ input[type=text] {
 .AddressDistrict p {
     margin: .5rem 0 1rem 0;
 }
-.sendButton2{
+
+.sendButton2 {
     display: flex;
     justify-content: flex-end;
 }
+
 #saveButton2 {
-    display: none ;
+    display: none;
 }
+
 .Adress {
     background-color: #F4F4F4;
     margin: 1rem 0 0 0;
@@ -133,7 +140,136 @@ input[type=text] {
     border-radius: 17px;
 }
 
-.textboxAndPinDiv{
+.textboxAndPinDiv {
     display: flex;
     flex-direction: column;
 }
+
+button {
+    border: none;
+    background-color: #F7F7F7;
+}
+
+.call-to-action-btns button {
+    margin: 0rem 1rem;
+}
+
+/*Notıfıcatıon box*/
+.notificationContiner{
+    top: 7%;
+    right: 9.5%;
+}
+/* 
+.notificationContiner {
+    background-color: #ffd5049f !important;
+    width: fit-content;
+    padding: 1rem .5rem;
+    line-height: 1.5;
+    border-radius: 27px 0 27px 27px;
+    position: fixed;
+    top: 7%;
+    right: 9%;
+    display: none;
+}
+
+.notification {
+    width: 15rem;
+    height: 20rem;
+    padding: 0 1rem;
+    overflow-y: scroll;
+}
+
+.notification::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 27px;
+}
+
+.notification::-webkit-scrollbar-thumb {
+    background: #585858;
+    border-radius: 27px;
+}
+
+.notification::-webkit-scrollbar-thumb:hover {
+    background: #585858;
+}
+
+.notification1,
+.notification2,
+.notification3 {
+    background-color: #F7F7F7;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 27px;
+    height: fit-content;
+}
+
+.notification1 p,
+.notification2 p,
+.notification3 p {
+    margin: 1rem 0 0 0;
+}
+
+.eyeImg {
+    display: flex;
+    justify-content: flex-end;
+}
+ */
+/* messages box */
+.messagingboxContiner{
+    top: 7% !important;
+    right: 13.5% !important;
+}
+/* .messagingboxContiner {
+    background-color: #ffd5049f !important;
+    width: fit-content;
+    padding: 1rem .5rem;
+    line-height: 1.5;
+    border-radius: 27px 0 27px 27px;
+    position: fixed;
+    top: 7%;
+    right: 15%;
+    display: none;
+}
+
+.messageingbox {
+    width: 15rem;
+    height: 20rem;
+    padding: 0 1rem;
+    overflow-y: scroll;
+
+}
+
+.messageingbox::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 27px;
+}
+
+.messageingbox::-webkit-scrollbar-thumb {
+    background: #585858;
+    border-radius: 27px;
+}
+
+.messageingbox::-webkit-scrollbar-thumb:hover {
+    background: #585858;
+}
+
+.message1,
+.message2,
+.message3 {
+    background-color: #F7F7F7;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 27px;
+    height: fit-content;
+}
+
+.message1 p,
+.message1 p,
+.message1 p {
+    margin: 1rem 0 0 0;
+}
+
+.eyeImg {
+    display: flex;
+    justify-content: flex-end;
+} */

@@ -377,3 +377,124 @@ body {
 }
 
 /* navbar */
+
+
+
+/*Notıfıcatıon box*/
+
+.notificationContiner {
+    background-color: #ffd5049f !important;
+    width: fit-content;
+    padding: 1rem .5rem;
+    line-height: 1.5;
+    border-radius: 27px 0 27px 27px;
+    position: fixed;
+    top: 8%;
+    right: 22%;
+    display: none;
+}
+
+.notification {
+    width: 15rem;
+    height: 20rem;
+    padding: 0 1rem;
+    overflow-y: scroll;
+}
+
+.notification::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 27px;
+}
+
+.notification::-webkit-scrollbar-thumb {
+    background: #585858;
+    border-radius: 27px;
+}
+
+.notification::-webkit-scrollbar-thumb:hover {
+    background: #585858;
+}
+
+.notification1,
+.notification2,
+.notification3 {
+    background-color: #F7F7F7;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 27px;
+    height: fit-content;
+}
+
+.notification1 p,
+.notification2 p,
+.notification3 p {
+    margin: 1rem 0 0 0;
+}
+
+.eyeImg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* messages box */
+
+.messagingboxContiner {
+    background-color: #ffd5049f !important;
+    width: fit-content;
+    padding: 1rem .5rem;
+    line-height: 1.5;
+    border-radius: 27px 0 27px 27px;
+    position: fixed;
+    top: 8%;
+    right: 26%;
+    display: none;
+}
+
+.messageingbox {
+    width: 15rem;
+    height: 20rem;
+    padding: 0 1rem;
+    overflow-y: scroll;
+
+}
+
+.messageingbox::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 27px;
+}
+
+.messageingbox::-webkit-scrollbar-thumb {
+    background: #585858;
+    border-radius: 27px;
+}
+
+.messageingbox::-webkit-scrollbar-thumb:hover {
+    background: #585858;
+}
+
+.message1,
+.message2,
+.message3 {
+    background-color: #F7F7F7;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 27px;
+    height: fit-content;
+}
+
+.message1 p,
+.message1 p,
+.message1 p {
+    margin: 1rem 0 0 0;
+}
+
+.eyeImg {
+    display: flex;
+    justify-content: flex-end;
+}
+#MessagesButton,
+#NotificationButton{
+    border: none;
+    background-color: #F7F7F7;
+    margin: 0 .65rem;
+}
