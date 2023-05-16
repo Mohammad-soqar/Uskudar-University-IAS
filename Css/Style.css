@@ -145,14 +145,16 @@ table {
     border-spacing: 0;
 }
 
-p {
-    color: #585858 !important;
-}
+/* edited section */
+
+/* I needed to remove this (p {color: #585858 !important;}) for fixes in Internship coordinator page */
 a{
     text-decoration: none;
-    color: #585858 !important;
-
+    /* I needed to remove this (color: #585858 !important;) for fixes in Internship coordinator page */
 }
+/* End of edited section */
+
+
 /*----------------------reset code-----------------*/ 
 
 body {
