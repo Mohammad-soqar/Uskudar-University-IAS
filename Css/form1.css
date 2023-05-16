@@ -1,0 +1,22 @@
+.DropDownBoxes{
+    display: flex;
+}
+.DropDownBoxes div{
+    margin: 1rem 7rem 1rem 1rem;
+}
+#StudentInfoInputs{
+    background-color: #ffffff;
+    padding: 2rem 2rem 4rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 27px;
+    box-shadow: rgba(0, 0, 0, 0.082) 2px 2px 30px 2px;
+    margin: 2rem 0px 0px;
+}
+.Buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.firstPageStudentInfoInputs{
+    display: grid;
+    
+}
