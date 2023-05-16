@@ -1,16 +1,49 @@
-.annbox
-{   
-    width: 1100px;
-    height: 450px;
-    background-color: white;
-    position: absolute; /* need to change to flex */
-    top: 150px;
-    left: 340px;
+ .annbox {
+    margin: 6rem 0rem 0rem 0rem;
+    background-color: white; 
+    /*  position: absolute;  */
+    /* need to change to flex */
     box-shadow: 2px 2px 30px 2px #00000015;
-    border-radius: 27px;   
+    border-radius: 27px;
+} 
+
+.announcement-box{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-.annbox h3
-{
+
+.announcement-link{
+    font-family: inter;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFD504;
+    border-radius: 27px;
+    padding: 1rem;
+    color: #fff;
+    transition: 0.4s;
+
+}
+
+.announcement-link h2{
+    font-weight: 600;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.announcement-link:hover{
+    background-color: #FFD504 ;
+    color: #ffffff;
+    transition: 0.4s;
+   
+}
+.announcement-link:hover{
+   
+    box-shadow: 1px 1px 10px #ddb800;
+}
+
+/* 
+.annbox h3 {
     font-family: inter;
     font-style: normal;
     font-size: 30px;
@@ -19,32 +52,26 @@
     text-align: center;
     padding-top: 30px;
 }
-.announ1, .announ2, .announ3,
-.announ4, .announ5, .announ6
-{   
-    width: 320px;
-    height: 150px;
-    position: absolute; /* need to change to flex */
-    left: 15px;
-    border-radius: 27px;  
-    background-color: #ffd504; 
+
+.announ {
+    padding: 1rem;
+    border-radius: 27px;
+    background-color: #ffd504;
 }
-#announ1, #announ2, #announ3,
-#announ4, #announ5, #announ6
-{
+
+#announ {
     text-decoration: none;
     color: #ffffff;
 }
-.announ1:hover, .announ2:hover, .announ3:hover,
-.announ4:hover, .announ5:hover, .announ6:hover
-{
+
+.announ :hover {
     background-color: #fff8d4;
     color: #585858 !important;
-}
+} */
 
 /* Start of need help section: Need Help in making them a block  */
 
-.announ1
+/* .announ1
 {
     top: 100px;
     left: 30px;
@@ -73,32 +100,32 @@
 {
     top: 270px;
     left: 750px;
-}
+} */
 
 /* End of Help Needed section  */
-
-.announs h2
-{
+/* 
+.announs h2 {
     font-size: 17px;
     font-family: inter;
     font-weight: 600;
     text-align: center;
     padding-top: 15px;
 }
-.announs p
-{
-   text-align: center;
-   padding-top: 20px;
+
+.announs p {
+    text-align: center;
+    padding-top: 20px;
 }
-.nav-bar 
-{
+
+.nav-bar {
     justify-content: flex-end !important;
 }
-.text p
-{
+
+.text p {
     margin: 1rem 0rem 0rem 0rem;
 }
-.announs a 
-{
+
+.announs a {
     margin: 0.4rem 0rem;
-}
+} */
+

@@ -45,6 +45,9 @@ $(document).ready(function () {
   });
 });
 
+
+
+/* THIS ONE SARAH */
 /* dropdown menue for questions and answers support student page  */
 function toggleAnswer(questionClass, answerClass, arrowId, angle) {
   $(questionClass).click(function () {
