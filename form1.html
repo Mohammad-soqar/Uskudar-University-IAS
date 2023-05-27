@@ -124,30 +124,33 @@
 
                 <section class="Account-Content">
 
-                    <div class="progress-bar">
+                    <div class="progress-bar" id="progressBar-form1">
                         <div class="step1" id="step">
-                            <p>step1</p>
-                            <div class="progress-circle"></div>
+                            <p id="stepNumber">step1</p>
+                            <div class="progress-circle step1Selected"></div>
+                            <p class="step-info stepInfo1">Student Info</p>
                         </div>
-                        <div class="progress-line"></div>
-                        <div class="step2">
-                            <p>step2</p>
-                            <div class="progress-circle"></div>
+                        <div class="progress-line step1Selected"></div>
+                        <div class="step2" id="step">
+                            <p id="stepNumber">step2</p>
+                            <div class="progress-circle step2Selected"></div>
+                            <p class="step-info stepInfo2">Type and duration</p>
                         </div>
-                        <div class="progress-line"></div>
-                        <div class="step3">
-                            <p>step3</p>
-                            <div class="progress-circle"></div>
+                        <div class="progress-line step2Selected"></div>
+                        <div class="step3" id="step">
+                            <p id="stepNumber">step3</p>
+                            <div class="progress-circle step3Selected"></div>
+                            <p class="step-info stepInfo3">Institution Info</p>
                         </div>
-                        <div class="progress-line"></div>
-                        <div class="step4">
-                            <p>step4</p>
-                            <div class="progress-circle"></div>
+                        <div class="progress-line step3Selected"></div>
+                        <div class="step4" id="step">
+                            <p id="stepNumber">step4</p>
+                            <div class="progress-circle step4Selected"></div>
+                            <p class="step-info stepInfo4">Download</p>
                         </div>
                     </div>
 
                     <div class="StudentInfo">
-                        <p>Student Info</p>
                         <div class="inputs" id="StudentInfoInputs">
 
                             <div class="firstPageStudentInfoInputs">
@@ -196,22 +199,89 @@
                                     <div>
                                         <label for="">Class</label>
                                         <select name="" id="">
-                                            <option value="" selected>Software Engineering Department ( English )
-                                            </option>
-                                            <option value="">sdasd</option>
+                                            <option value="" selected>Select</option>
+                                            <option value="">1st   </option>
                                             <option value="">sdasd</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="Buttons">
-                                    <button>Back</button>
-                                    <button>Next</button>
+                            </div>
+
+
+                            <div class="SecondPageStudentInfoInputs">
+                                <div class="Two-Inputs-line">
+                                    <div>
+                                        <label for="">ٍStart Date</label>
+                                        <input type="date">
+                                    </div>
+
+                                    <div>
+                                        <label for="">End Date</label>
+                                        <input type="date">
+                                    </div>
+
+                                </div>
+                                <div class="Two-Inputs-line">
+                                    <div>
+                                        <label for="">Days of internship</label>
+                                        <input type="number" min="1">
+                                    </div>
+
+                                    <div>
+                                        <label for="">Type</label>
+                                        <select name="" id="">
+                                            <option value="" selected> Select</option>
+                                            <option value="">FUll Semester</option>
+                                            <option value="">Spring Semester</option>
+                                            <option value="">Internship</option>
+                                            <option value="">Voluntary Internship</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="CkeckBoxType">
+                                    <label for=""> <input type="checkbox" />
+                                        Are you dependent on your parents</label>
                                 </div>
                             </div>
-                            <div class="SecondPageStudentInfoInputs">
+                            <div class="ThiredPageStudentInfoInputs">
+                                <div class="Two-Inputs-line">
+                                    <div>
+                                        <label for="">Institution Name</label>
+                                        <input type="text" placeholder="Codyle">
+                                    </div>
 
+                                    <div>
+                                        <label for="">Phone Number</label>
+                                        <input type="text" placeholder="+90 512 345 67 89">
+                                    </div>
+
+                                </div>
+                                <div class="Two-Inputs-line">
+                                    <div>
+                                        <label for="">Address</label>
+                                        <input type="text" placeholder="Address">
+                                    </div>
+
+                                    <div>
+                                        <label for="">Authorized Person/Title</label>
+                                        <input type="text" placeholder="Authorized Person/Title">
+                                    </div>
+
+                                </div>
                             </div>
-
+                            <div class="ForthPageStudentInfoInputs visable">
+                                <div class="submit-downloadButtons">
+                                    <button class="DownloadPDF">Download PDF</button>
+                                </div>
+                                <img src="img/PDF-Symbol.png" alt="">
+                            </div>
+                            <div class="Buttons">
+                                <div>
+                                    <button id="Back-Button">&#8592; Back</button>
+                                </div>
+                                <button id="Next-Button">Next &#8594;</button>
+                            </div>
                         </div>
                     </div>
 
@@ -223,6 +293,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="JS/app.js"></script>
+    <script src="JS/form1.js"></script>
 </body>
 
 </html>
