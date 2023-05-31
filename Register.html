@@ -1,0 +1,342 @@
+<!-- @page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+} -->
+
+
+<head>
+    <link rel="icon" href="~/img/webIcon.png">
+
+    <link rel="stylesheet" href="~/css/register.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/CareerCenter.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/DataTable.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/form.css" asp-append-version="true" />
+    <link rel="stylesheet" href="Css/Register.css">
+    <link rel="stylesheet" href="Css/Style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <section class="side-bar">
+            <div class="logo">
+                <a href="">
+                    <img src="img\logo.png" alt="" height="120rem">
+                </a>
+            </div>
+            <div class="icons">
+                <div class="home">
+                    <a href="">
+                        <img src="img\home-symbol.png" alt="" height="27px">
+                        <p>Home</p>
+                    </a>
+                </div>
+                <!-- ----------Messages Dropdown Menu---------- -->
+
+                <div class="Messages">
+                    <div id="dropdown-messages-student">
+                        <img src="img\messages-symbol.png" alt="" width="27px " height="22px">
+                        <p> Messages <img id="down-arrow-home-student" src="img\Dowm-arrow.png" alt="" height="10px">
+                        </p>
+                    </div>
+
+                    <ul class="Messagesslide">
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Compose Message</a></li>
+                    </ul>
+                </div>
+
+                <!-- ----------Messages Dropdown Menu---------- -->
+                <div class="internship">
+                    <a href="">
+                        <img src="img\internship-symbol.png" alt="" height="22px">
+                        <p>Internship</p>
+                    </a>
+                </div>
+                <div class="forms">
+                    <a href="">
+                        <img src="img\forms-symbol.png" alt="" height="27px">
+                        <p>Forms</p>
+                    </a>
+                </div>
+                <div class="guide"><a href="">
+                        <img src="img\guide-symbol.png" alt="" height="23px">
+                        <p>Guide</p>
+                    </a>
+                </div>
+                <div class="logout-support">
+                    <div class="logout">
+                        <a href="Login.html">
+                            <img src="img\logout-symbol.png" alt="" height="27px">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                    <div class="support">
+                        <a href="Support.html">
+                            <img src="img\support-symbol.png" alt="">
+                            <p>Support</p>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- ----------side menu bar---------- -->
+        <div class="right-section">
+            <div class="contents">
+
+                <section class="nav-bar">
+                    <div>
+                        <h3>Status</h3>
+                        <div class="status">
+                            <div class="progress-bar">
+                                <div class="progress-circle"></div>
+                                <div class="progress-line"></div>
+                                <div class="progress-circle"></div>
+                                <div class="progress-line"></div>
+                                <div class="progress-circle"></div>
+                                <div class="progress-line"></div>
+                                <div class="progress-circle"></div>
+                            </div>
+
+                            <button class="status-info" id="startButton"><img src="img/support-symbol.png"
+                                    alt=""></button>
+                        </div>
+                    </div>
+
+
+                    <div class="call-to-action-btns">
+                        <a href=""><img src="img/messages.png" alt="" height="32px"></a>
+                        <a href=""><img src="img/Notification.png" alt="" height="35px"></a>
+                        <a class="Account" href="Account.html">
+                            <img src="img/Account.png" alt="" height="60px">
+                            <div class="Account-Text">
+                                <p>John Doe</p>
+                                <p>200209476</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+
+                <section class="Account-Content">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="containers ">
+                                <div class="inputs ">
+                                    <div id="Add-User-btn" class="widget-right-side">
+                                        <p>Add User</p>
+                                        <img src="~/img/CareerCenter/AddUser.png" height="45px" alt="">
+                                    </div>
+                                    <form class="RegisterForm" id="registerForm" asp-route-returnUrl="@Model.ReturnUrl"
+                                        method="post">
+
+
+                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                        <!-- First Slide -->
+                                        <div id="first-slide">
+                                            <div class="form-floating py-2 col-6">
+                                                <label for="">Select Role</label>
+                                                <select id="Input_Role" asp-for="Input.Role"
+                                                    asp-items="@Model.Input.RoleList" class=form-select>
+
+                                                    <option disabled="" selected="">-Select Role-</option>
+                                                    <option value="Student">Student</option>
+                                                    <option value="Coordinator">Coordinator</option>
+                                                    <option value="Admin">Admin</option>
+                                                    <option value="CC">CC</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-floating">
+                                                <label asp-for="Input.Email">Email</label>
+                                                <input asp-for="Input.Email" class="form-control"
+                                                    autocomplete="username" aria-required="true" />
+                                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                            </div>
+
+                                            <div class="Two-Inputs-line">
+                                                <div class="form-floating">
+                                                    <label asp-for="Input.Password">Password</label>
+                                                    <input asp-for="Input.Password" class="form-control"
+                                                        autocomplete="new-password" aria-required="true" />
+                                                    <span asp-validation-for="Input.Password"
+                                                        class="text-danger"></span>
+                                                </div>
+
+                                                <div class="form-floating">
+                                                    <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                                                    <input asp-for="Input.ConfirmPassword" class="form-control"
+                                                        autocomplete="new-password" aria-required="true" />
+                                                    <span asp-validation-for="Input.ConfirmPassword"
+                                                        class="text-danger"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="inputQue Two-Inputs-line">
+                                                <div class="form-floating">
+                                                    <label asp-for="Input.Name">Name</label>
+                                                    <input asp-for="Input.Name" class="form-control" />
+                                                    <span asp-validation-for="Input.Name" class="text-danger"></span>
+                                                </div>
+
+                                                <div class="form-floating">
+                                                    <label asp-for="Input.PhoneNumber">Phone Number</label>
+                                                    <input asp-for="Input.PhoneNumber" class="form-control" />
+                                                    <span asp-validation-for="Input.PhoneNumber"
+                                                        class="text-danger"></span>
+                                                </div>
+                                            </div>
+
+                                            <div hidden class="form-floating">
+                                                <input value="1" asp-for="Input.UserType" class="form-control"
+                                                    autocomplete="new-password" aria-required="true" />
+                                            </div>
+
+
+                                        </div>
+
+                                        <!-- Second Slide -->
+                                        <div id="second-slide">
+                                            <div class="Two-Inputs-line">
+                                                <div class="form-floating">
+                                                    <label asp-for="Input.TC">TC</label>
+                                                    <input asp-for="Input.TC" class="form-control" />
+                                                    <span asp-validation-for="Input.TC" class="text-danger"></span>
+                                                </div>
+                                                <div class="form-floating py-2 col-6">
+                                                    <label for="">Select Role</label>
+                                                    <select asp-for="Input.CoordinatorId"
+                                                        asp-items="@Model.Input.CoordinatorList" class="form-select">
+                                                        <option disabled selected>-Select Role-</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="Two-Inputs-line">
+                                                <div class="form-floating">
+                                                    <label asp-for="Input.Faculty">Faculty</label>
+                                                    <input asp-for="Input.Faculty" class="form-control" />
+                                                    <span asp-validation-for="Input.Faculty" class="text-danger"></span>
+                                                </div>
+
+                                                <div class="form-floating">
+                                                    <label asp-for="Input.Department">Department</label>
+                                                    <input asp-for="Input.Department" class="form-control" />
+                                                    <span asp-validation-for="Input.Department"
+                                                        class="text-danger"></span>
+                                                </div>
+
+                                                <div class="form-floating">
+                                                    <label asp-for="Input.Class">Class</label>
+                                                    <input asp-for="Input.Class" class="form-control" />
+                                                    <span asp-validation-for="Input.Class" class="text-danger"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <label class="form-check-label" asp-for="Input.IsApproved"> <input
+                                                        class="form-check-input" type="checkbox"
+                                                        asp-for="Input.IsApproved" /> Is
+                                                    Approved</label>
+
+                                                <span asp-validation-for="Input.IsApproved" class="text-danger"></span>
+                                            </div>
+
+
+                                            <div class="form-check">
+                                                <label class="form-check-label" asp-for="Input.HasTakenFirstInternship">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        asp-for="Input.HasTakenFirstInternship"> Has Taken First
+                                                    Internship</label>
+
+                                            </div>
+
+                                            <div class="form-check">
+                                                <label class="form-check-label"
+                                                    asp-for="Input.HasTakenSecondInternship"> <input
+                                                        class="form-check-input" type="checkbox"
+                                                        asp-for="Input.HasTakenSecondInternship"> Has Taken Second
+                                                    Internship</label>
+
+                                            </div>
+
+                                            <div class="sendButton Add" id="Back-Button">
+                                                <div class="backButton"> &#8592;Back
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sendButton Add">
+                                            <button id="registerSubmit" type="submit"
+                                                class="w-100 btn btn-lg btn-primary">Add User</button>
+                                        </div>
+
+                                        <div class="sendButton Add">
+                                            <div class="post-btn" id="next-btn">Next&#8594;</div>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+    </main>
+
+</body>
+<!-- 
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" /> -->
+<!--     <script src="~/JS/CareerCenter.js"></script>
+ -->
+<!--   <script>
+
+        $(document).ready(function () {
+            $('#next-btn').hide();
+
+            $('#Input_Role').change(function () {
+                var selection = $('#Input_Role option:selected').text();
+                if (selection === 'Student') {
+                    $('#next-btn').show();
+                    $('#registerSubmit').hide();
+
+                } else {
+                    $('#next-btn').hide();
+                    $('#registerSubmit').show();
+
+                }
+            });
+            $('#next-btn').click(function () {
+                $('#registerSubmit').show();
+                        
+                    });
+
+            $('.backButton').click(function () {
+                $('#registerSubmit').hide();
+
+            });
+        });
+
+
+        //    $('#backButton').click(function () {
+        //        $('#secondSlide').hide();
+        //        $('#firstSlide').show();
+        //    });
+        //});
+    </script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="JS/Register.js"></script>
+<!-- }
+ -->

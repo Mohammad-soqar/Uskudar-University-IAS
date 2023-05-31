@@ -1,0 +1,623 @@
+/* .DataTable {
+    width: 100%;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+thead {
+    background-color: #F5F5F5;
+}
+
+.center {
+    text-align: center;
+}
+
+th,
+td {
+    padding: 18px !important;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
+th {
+    cursor: pointer;
+    width: 100px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.indexth-student {
+    width: 120px !important
+}
+
+.indexth {
+    width: 200px !important
+}
+
+td {
+    max-width: 100px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sort {
+    margin-left: 5px;
+}
+
+
+#searchInput {
+    margin-bottom: 10px;
+}
+
+.rotateImage img {
+    transition: transform 0.5s;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+}
+
+.pending div {
+    color: #AE9100;
+    background-color: #FFF8D4 !important;
+}
+
+.NA div {
+    color: #B20000;
+    background-color: #FFDBDB !important;
+}
+
+
+.completed div {
+    color: #007505;
+    background-color: #EBF8EC !important;
+}
+
+.state div {
+    padding: 0.3rem 0.6rem;
+    border-radius: 19px;
+    font-weight: 500;
+}
+
+#back-left {
+    background: transparent;
+    border: none;
+    color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Input-title {
+    margin-bottom: 1rem;
+}
+
+.inputs label {
+    display: block;
+    margin: 0 0 .5rem 0;
+}
+
+.tox-tinymce {
+    margin: 0px !important;
+    height: 250px !important;
+}
+
+.three-inputs-left-one-input-right {
+    display: flex;
+    gap: 10px;
+    flex: 1 1 100%;
+}
+
+
+
+.multiple-inputs-line>div {
+    flex: 1;
+}
+
+.multiple-inputs-line label {
+    flex: 0 0 100px;
+}
+
+.multiple-inputs-line input[type="text"] {
+    flex: 1;
+}
+
+
+.multiple-inputs-line {
+    margin: 1rem 0.5rem;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex: 1 1 100%;
+}
+
+
+.inputs input,
+select {
+    box-sizing: border-box;
+    border: solid #FFD504 2px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 80%;
+}
+
+.three-inputs-left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+option {
+    background-color: #FFF8D4;
+}
+
+.Add {
+    justify-content: flex-end !important;
+}
+
+.sendButton {
+    text-align: end;
+}
+
+.sendButton button,
+#next-btn,
+.backButton div {
+    padding: .5rem 3rem;
+    border: none;
+    border-radius: 27px;
+    background-color: #FFD504;
+    font-size: 18px;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containers {
+    background-color: #fff;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 27px;
+}
+
+.Two-Inputs-line {
+    display: flex;
+    gap: 10px;
+    flex: 1 1 100%;
+}
+
+.Two-Inputs-line>div {
+    flex: 1;
+}
+
+
+.Two-Inputs-line input[type="text"] {
+    flex: 1;
+}
+
+.RegisterForm {
+    display: flex;
+    padding: 2rem 2rem 3rem 2rem;
+    flex-direction: column;
+}
+
+.inputs input,
+select {
+    box-sizing: border-box;
+    border: solid #FFD504 2px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 80%;
+}
+
+.Add-User-Form>div {
+    flex: 1 1 100%;
+    margin-top: 10px;
+}
+
+.sendButton {
+    text-align: end;
+}
+
+.Add {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-direction: row-reverse !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-bar {
+    justify-content: flex-end !important;
+}
+
+.DataTable {
+    margin: 1.5rem 0rem 0rem 0rem;
+}
+
+.CareerCenter-Content {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 5rem 0rem 0rem 0rem;
+}
+
+.both-sides {
+    display: flex;
+    transition: width 0.5s ease;
+}
+
+.widgets-shared {
+    background-color: #fff;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 27px;
+}
+
+.nav-bar {
+    justify-content: flex-end !important;
+}
+
+.widgetHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.widget-left-side p,
+.widget-right-side p {
+    color: #585858;
+    font-size: 20px;
+    font-family: inter;
+    font-weight: 600;
+}
+
+.left-section {
+    transition: width 0.5s ease;
+    width: 100%;
+}
+
+.widget-left-side img {
+    margin: 0px 10px 0px 0px
+}
+
+.widget-left-side .hover-image {
+    transition: transform 0.3s ease;
+}
+
+.widget-left-side:hover .hover-image {
+    transform: scale(1.1) translate(-3.5%, -3.7%);
+}
+
+.widget-left-side {
+    flex-direction: column;
+    display: flex;
+    margin: 0rem 2rem 0rem 0rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    position: relative;
+}
+
+
+.widget-left-side img.hover-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.check-all-btn button {
+    background-color: transparent;
+    border: none;
+    font-family: inter;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.widget-right-side p {
+    width: 60%;
+}
+
+.widget-right-side img {
+    margin: 0px 10px 0px 0px
+}
+
+.widget-right-side {
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.right-section-widgets {
+    display: flex;
+    transition: width 0.5s ease;
+    flex-direction: column;
+}
+
+.right-section-widgets {
+    width: 70%;
+    justify-content: space-between;
+}
+
+
+.collapse {
+    width: 0 !important;
+}
+
+.collapseVertical {
+    height: 0 !important;
+}
+
+#searchInput {
+    display: none;
+}
+
+
+
+.back-left-btn {
+    position: absolute;
+    padding: 0.5rem;
+    font-size: 18px;
+    top: 12%;
+    color: #fff !important;
+    border: none !important;
+    background-color: #FFD504 !important;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+.Add-User-Form-invisible {
+    display: none;
+}
+
+.Add-User-Form-invisible input {
+    box-sizing: border-box;
+    border: solid #FFD504 2px;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+
+
+
+.password-btn {
+    color: #fff;
+    background-color: #FFD504;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #FFD504;
+}
+
+.copyBtn {
+    color: #FFD504;
+    background-color: transparent;
+}
+
+.Add-User-Form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 2rem 1rem 2rem;
+    gap: 10px;
+}
+
+.sendButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.Add-User-Form>div {
+    flex: 1 1 100%;
+    margin-top: 10px;
+}
+
+.Add-User-Form>div label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+.Add-User-Form button {
+    margin-top: 10px;
+    align-self: flex-end;
+} */
+
+
+.containers {
+    background-color: #fff;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 27px;
+}
+
+.RegisterForm {
+    display: flex;
+    padding: 2rem 2rem 3rem 2rem;
+    flex-direction: column;
+}
+
+.Two-Inputs-line {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.widget-right-side {
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin: 0 0 .5rem 0;
+}
+
+.inputs input,
+.inputs select {
+    box-sizing: border-box;
+    border: solid #FFD504 2px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 100%;
+    margin: .5rem 0 0 0;
+}
+
+.form-floating {
+    margin: 2% 0 0 0;
+    width: 90%;
+}
+
+.Two-Inputs-line .form-floating {
+    width: 45%;
+    margin: 2% 10% 0 0;
+}
+
+.RegisterForm button {
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+    color: #fff !important;
+    border: none !important;
+    background-color: #FFD504 !important;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+/* .registerSubmit,
+ */
+.widget-right-side {
+    padding: 2rem 2rem 1rem 2rem;
+    font-size: 20px;
+    font-family: inter;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+}
+
+.sendButton {
+    margin: 1rem 0 0 0;
+}
+
+#second-slide {
+    display: none;
+}
+#next-btn{
+    display: none;
+}
+.form-check input{
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    width: 14px;
+    margin: 0;
+}
+.form-check{
+    margin: 1rem 0 0 0;
+    display: flex;
+}
+.sendButton{
+    display: flex;
+    justify-content: flex-end;
+}
+#Back-Button{
+    display: flex;
+    justify-content: flex-start !important;
+    margin:1rem 0 0 0  ;
+}
+.backButton,
+.post-btn{
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+    color: #fff !important;
+    border: none !important;
+    background-color: #FFD504 !important;
+    border-radius: 21px;
+    cursor: pointer;
+    width: 3rem;
+
+}
