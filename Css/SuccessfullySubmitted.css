@@ -1,0 +1,67 @@
+.Account-Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.success-box {
+  width: 720px;
+  height: 450px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px 0;
+  border-radius: 37.6984px;
+  background-image: url("https://fontawesome.com/icons/circle-check?f=classic&s=regular&pc=%23858585");
+  background-size: 100px;
+  background-image: url("/img/checkSign1.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  position: relative;
+}
+
+.success-box h1 {
+  font-size: 46px;
+  font-weight: 500;
+  margin-top: -20px;
+}
+
+.img2 {
+  width: 110px;
+  height: 110px;
+  color: #ffd504;
+}
+
+#Ok {
+  background-color: #ffd504;
+  color: #ffffff;
+  width: 180px;
+  height: 50px;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.btn {
+  font-size: 26.36px;
+  margin-top: 20px;
+  height: 51px;
+  width: 184px;
+  border: none;
+  border-radius: 25.5229px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 6px;
+}
+
+.btn:hover {
+  border: black solid 2px;
+}
