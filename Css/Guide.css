@@ -1,0 +1,34 @@
+#Guidebackgroudn{
+    margin: 2rem 0;
+}
+.Dashboardscontainer{
+    margin: 0 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 3rem;
+}
+.Dashboarddiv{
+    background-color: #fffffff1;
+    padding: 1rem 1rem 2rem 1rem ;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px 2px #00000030;
+}
+.Dashboarddiv h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 1rem .5rem;
+}
+.Dashboarddiv p{
+    line-height: 1.5rem;
+    margin: 0 0 2.5rem 0;
+}
+.Dashboarddiv a{
+    box-sizing: border-box;
+    border: none;
+    background-color: #FFD504;
+    color: #ffffff;
+    width: 80%;
+    padding: 10px 23%;
+    margin: 0.5rem 0 0 2.5rem;
+    border-radius: 21px;
+}
