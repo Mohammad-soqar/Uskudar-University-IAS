@@ -1,0 +1,107 @@
+.DropDownBoxes{
+    display: flex;
+}
+.DropDownBoxes div{
+    margin: 1rem 3rem 1rem 1rem;
+    width: 80%;
+}
+
+#StudentInfoInputs{
+    background-color: #ffffff;
+    padding: 2rem 2rem 4rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 27px;
+    box-shadow: rgba(0, 0, 0, 0.082) 2px 2px 30px 2px;
+    margin: 2rem 0px 0px;
+}
+
+
+#progressBar-form1{
+    margin: 4rem 0 4rem 0;
+}
+
+#stepNumber {
+    margin: 0 0 0rem 0;
+    position: absolute;
+    top: 15%;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.step-info{
+    position: absolute; 
+    top: 26%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0rem 0rem 0 -2rem;
+}
+    .stepInfo1,
+    .stepInfo2,
+    .stepInfo3,
+    .stepInfo4{
+    display: none;
+} 
+
+#progressBar-form1 .progress-circle{
+    width: 35px;
+    height: 35px;
+}
+#progressBar-form1 .progress-line{
+    width: 18rem;
+    height: 5px !important;
+}
+.Buttons{
+    display: flex;
+    justify-content: space-between;
+}
+ button{
+
+    margin: 3rem 3rem 0 0;
+    padding: .5rem 3rem;
+    border: none;
+    border-radius: 27px;
+    background-color: #FFD504;
+    font-size: 18px;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+/* #linee{
+    margin: 1rem 0 0rem 0;
+} */    
+.CkeckBoxType label{
+    width: 50%;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+.CkeckBoxType input[type= checkbox]{
+    width: 3rem;
+    height: 1rem;
+}
+.ForthPageStudentInfoInputs{
+    display: flex ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ForthPageStudentInfoInputs .submit-downloadButtons{
+    display: flex;
+    flex-direction: column;
+}
+.DownloadPDF{
+    background-color: #585858;
+}
+.SecondPageStudentInfoInputs,
+.ThiredPageStudentInfoInputs
+{
+    display: none;
+}
+.visable{
+    display: none;
+}
+.progressColorSelected{
+    background-color: #FFD504;
+}
+
+#Back-Button{
+    display: none;
+}

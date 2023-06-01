@@ -539,7 +539,7 @@ $(document).ready(function () {
 
 //notification box on click
 
-$(document).click(function(e) {
+$(document).click(function (e) {
   var notificationContainer = $(".notificationContiner");
   if (!notificationContainer.is(e.target) && notificationContainer.has(e.target).length === 0) {
     notificationContainer.hide();
@@ -548,7 +548,7 @@ $(document).click(function(e) {
 
 $("#NotificationButton").click(function (e) {
   e.stopPropagation();
-  if($(".notificationContiner").css("display") === "none") {
+  if ($(".notificationContiner").css("display") === "none") {
     $(".notificationContiner").show();
   } else if ($(".notificationContiner").is(":visible")) {
     $(".notificationContiner").hide();
@@ -558,7 +558,7 @@ $("#NotificationButton").click(function (e) {
 
 // Messages box on click
 
-$(document).click(function(e) {
+$(document).click(function (e) {
   var notificationContainer = $(".messagingboxContiner");
   if (!notificationContainer.is(e.target) && notificationContainer.has(e.target).length === 0) {
     notificationContainer.hide();
@@ -567,12 +567,14 @@ $(document).click(function(e) {
 
 $("#MessagesButton").click(function (e) {
   e.stopPropagation();
-  if($(".messagingboxContiner").css("display") === "none") {
+  if ($(".messagingboxContiner").css("display") === "none") {
     $(".messagingboxContiner").show();
   } else if ($(".messagingboxContiner").is(":visible")) {
     $(".messagingboxContiner").hide();
   }
 });
+
+
 
 
 

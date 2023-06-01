@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Css/Style.css">
-    <link rel="stylesheet" href="Css\AccountHwalthInsurance.css">
+    <link rel="stylesheet" href="Css/uploadFile.css">
 
 </head>
 
@@ -25,7 +25,7 @@
             </div>
             <div class="icons">
                 <div class="home">
-                    <a href="Student.html">
+                    <a href="">
                         <img src="img\home-symbol.png" alt="" height="27px">
                         <p>Home</p>
                     </a>
@@ -53,7 +53,7 @@
                     </a>
                 </div>
                 <div class="forms">
-                    <a href="forms.html">
+                    <a href="">
                         <img src="img\forms-symbol.png" alt="" height="27px">
                         <p>Forms</p>
                     </a>
@@ -89,7 +89,7 @@
 
                 <section class="nav-bar">
                     <div>
-                        <!--  <h3>Status</h3>
+                        <h3>Status</h3>
                         <div class="status">
                             <div class="progress-bar">
                                 <div class="progress-circle"></div>
@@ -103,67 +103,40 @@
 
                             <button class="status-info" id="startButton"><img src="img/support-symbol.png"
                                     alt=""></button>
-                        </div> -->
-                        <p id="AccountSettings">Account Settings</p>
+                        </div>
                     </div>
 
 
                     <div class="call-to-action-btns">
                         <a href=""><img src="img/messages.png" alt="" height="32px"></a>
                         <a href=""><img src="img/Notification.png" alt="" height="35px"></a>
-
+                        <a class="Account" href="Account.html">
+                            <img src="img/Account.png" alt="" height="60px">
+                            <div class="Account-Text">
+                                <p>John Doe</p>
+                                <p>200209476</p>
+                            </div>
+                        </a>
                     </div>
                 </section>
 
 
                 <section class="Account-Content">
+                    <div class="uploadfilecontainer">
 
-
-                    <div class="Account-Links">
-                        <a href="Account.html"> My profile</a>
-                        <a href="AccountStatus.html">Status</a>
-                        <a id="selected" href="AccountHwalthInsurance.html">Health Insurance</a>
-                        <a href="SavedInternships.html">Saved Internships</a>
-
+                        <form class="uploadFileForm">
+                            <label for="" id="FileLabel">File</label>
+                           <img src="img/uploadFile2-Symbol.png" alt="" width="100px">
+                           <input type="file" id="inputFill" />
+                            <label for="note">Add Note</label>
+                            <textarea name="note" id="note" ></textarea>
+                            <button>Upload</button>
+                        </form>
                     </div>
 
-                    <div id="line"></div>
-
-
-                    <div class="right-side-panel">
-
-                        <div class="MyProfile">
-                            <h3>Health Insurance</h3>
-                            <a class="Account" href="Account.html">
-                                <img src="img/Account.png" alt="" height="60px">
-                                <div class="Account-Text">
-                                    <p>John Doe</p>
-                                    <p>200209476</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="HealthInsuranceSetting">
-                            <div>
-                                <div class="HeartbeatSymbolAndName">
-                                    <img src="img/Heartbeat-Symbol.png" alt="">
-                                    <p>John Doe</p>
-                                </div>
-                                <div class="dates">
-                                    <p>Start Date: 07/08/2023</p>
-                                    <p>End Date: 27/08/2023</p>
-                                </div>
-                                <div class="provided">
-                                    <p>Provided by:</p>
-                                    <img src="img/Insurance-Symbol.png" alt="">
-                                </div>
-                                <button>Dowmload</button>
-                            </div>
-                            <div class="PDFSymbolImg">
-                                <img src="img/PDF-Symbol.png" alt="">
-                            </div>
-                        </div>
-                    </div>
                 </section>
+
+
             </div>
     </main>
 

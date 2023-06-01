@@ -1,0 +1,19 @@
+.SavedInternships{
+    background-color: #F4F4F4;
+    padding: 2rem;
+    border-radius: 27px;
+    margin: 2rem 0 0 0;
+    overflow-y: scroll;
+    height: calc(100vh - 25rem);
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    gap: 2rem;
+}
+/* .SavedInternships::-webkit-scrollbar-thumb {
+    background: #585858;
+    border-radius: 27px;
+}
+ .SavedInternships::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 27px;
+}  */

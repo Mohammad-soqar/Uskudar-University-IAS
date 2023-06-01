@@ -1,0 +1,52 @@
+.uploadfilecontainer{
+    background-color: #fff;
+    box-shadow: 2px 2px 30px 2px #00000015;
+    border-radius: 27px;
+    margin: 8rem 17rem 0 17rem;
+}
+.uploadFileForm{
+    padding: 2rem 2rem 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.uploadFileForm label{
+    font-size: 20px;
+    font-family: inter;
+    font-weight: 600;
+    margin: 0 0 .5rem 0;
+    
+}
+.uploadFileForm input{
+    margin: 2rem 0 1rem 0;
+}
+.uploadFileForm button{
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+    color: #fff !important;
+    border: none !important;
+    background-color: #FFD504 !important;
+    border-radius: 21px;
+    cursor: pointer;
+    width: 10rem;
+    align-self: center;
+    margin: 1rem 0 0 0;
+}
+#note{
+    max-width: 30rem;
+}
+#inputFill{
+    width: fit-content; 
+}
+#FileLabel{
+    align-self: center;
+}
+/* 
+input[type="file"] {
+    display: none;
+}
+#chooseCustome{
+display: inline-block;
+padding: 6px 12px;
+cursor: pointer;
+} */
